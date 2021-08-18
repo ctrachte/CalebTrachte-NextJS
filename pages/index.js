@@ -22,20 +22,25 @@ export default function Home() {
             href="https://www.npmjs.com/package/moment-datepicker-js"
             className="card">
             <h3>Moment Datepicker </h3>
+            <img src="/npm-logo.png" height="150" width="300" alt="npm logo"/>
             <p>Easily adaptable pure JS driven date range picker, with extensive customizable features.</p>
           </a>
 
           <a href="https://github.com/ctrachte"
             className="card">
-            <h3>Github</h3>
-            <p>Learn about side projects I've been working on, demos and tutorials i've taught, and more!</p>
+            <img src="/github-logo.png" height="150" width="300"  alt="Github logo"/>
+            <p>Learn about side projects I've been working on, demos and tutorials I've taught, and more!</p>
           </a>
 
           <a
             href="https://www.meetup.com/javascript-conway/"
             className="card"
           >
-            <h3>Central Arkansas JavaScript</h3>
+            <h3>Central Arkansas JavaScript
+
+            </h3>
+            <img src="/js-AR-official-logo.jpg" height="150" width="175"  alt="Central Arkansas JavaScript logo"/>
+
             <p>Learn more about the latest JavaScript frameworks, utilities, and tricks through our meetup group! Co-founded by Caleb Trachte, and two other local senior developers.</p>
           </a>
 
@@ -44,6 +49,7 @@ export default function Home() {
             className="card"
           >
             <h3>Airbnb SuperHost!</h3>
+            <img src="/airbnb-logo-red.jpg" height="150" width="250"  alt="Airbnb logo"/>
             <p>
               Caleb Trachte and his wife host guests at their full-service bed and breakfast in Cabot, AR!
             </p>
