@@ -4,45 +4,48 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hello Internet Traveler!
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get to know me (Caleb Trachte) by browsing some of my projects, ventures, open-source code, and more:
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a
+            href="https://www.npmjs.com/package/moment-datepicker-js"
+            className="card">
+            <h3>Moment Datepicker </h3>
+            <p>Easily adaptable pure JS driven date range picker, with extensive customizable features.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://github.com/ctrachte"
+            className="card">
+            <h3>Github</h3>
+            <p>Learn about side projects I've been working on, demos and tutorials i've taught, and more!</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://www.meetup.com/javascript-conway/"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Central Arkansas JavaScript</h3>
+            <p>Learn more about the latest JavaScript frameworks, utilities, and tricks through our meetup group! Co-founded by Caleb Trachte, and two other local senior developers.</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.airbnb.com/h/trachtenhaus"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Airbnb SuperHost!</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Caleb Trachte and his wife host guests at their full-service bed and breakfast in Cabot, AR!
             </p>
           </a>
         </div>
