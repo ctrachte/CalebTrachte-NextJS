@@ -17,54 +17,67 @@ export default function Home() {
           Get to know me (Caleb Trachte) by browsing some of my projects, ventures, open-source code, and more:
         </p>
 
-        <div className="grid">
-          <a
-            href="https://www.npmjs.com/package/moment-datepicker-js"
-            className="card">
-            <h3>Moment Datepicker </h3>
-            <img src="/npm-logo.png" height="150" width="300" alt="npm logo" />
-            <p>Easily adaptable pure JS driven date range picker, with extensive customizable features.</p>
-          </a>
+        <ul className="card-list">
 
-          <a href="https://github.com/ctrachte"
-            className="card">
-            <img src="/github-logo.png" height="150" width="300" alt="Github logo" />
-            <p>Learn about side projects I've been working on, demos and tutorials I've taught, and more!</p>
-          </a>
+          <li className="card">
+            <a id="airbnbImage" className="card-image" href="https://www.airbnb.com/h/trachtenhaus" target="_blank">
+              <img src="/airbnb-logo-red.jpg" alt="Airbnb Logo" />
+            </a>
+            <a className="card-description" href="https://www.airbnb.com/h/trachtenhaus"
+              target="_blank">
+              <h2>Airbnb SuperHost!</h2>
+              <p>Caleb Trachte and his wife host guests at their full-service bed and breakfast in Cabot, AR!
+              </p>
+            </a>
+          </li>
 
-          <a
-            href="https://www.meetup.com/javascript-conway/"
-            className="card"
-          >
-            <h3>Central Arkansas JavaScript
+          <li className="card">
+            <a id="momentDatepickerImage" className="card-image" href="https://www.npmjs.com/package/moment-datepicker-js" target="_blank">
+              <img src="/npm-logo.png" alt="NPM Logo" />
+            </a>
+            <a className="card-description" href="https://www.npmjs.com/package/moment-datepicker-js"
+              target="_blank">
+              <h2>Moment Datepicker</h2>
+              <p>Easily adaptable pure JS driven date range picker, with extensive customizable features.
+              </p>
+            </a>
+          </li>
 
-            </h3>
-            <img src="/js-AR-official-logo.jpg" height="150" width="175" alt="Central Arkansas JavaScript logo" />
+          <li className="card">
+            <a id="githubImage" className="card-image" href="https://www.npmjs.com/package/moment-datepicker-js" target="_blank">
+              <img src="/npm-logo.png" alt="NPM Logo" />
+            </a>
+            <a className="card-description" href="https://www.npmjs.com/package/moment-datepicker-js"
+              target="_blank">
+              <h2>Open Source Code</h2>
+              <p>Learn about side projects I've been working on, demos and tutorials I've taught, and more!
+              </p>
+            </a>
+          </li>
 
-            <p>Learn more about the latest JavaScript frameworks, utilities, and tricks through our meetup group! Co-founded by Caleb Trachte, and two other local senior developers.</p>
-          </a>
+          <li className="card">
+            <a id="CAJOfficialLogo" className="card-image" href="https://www.meetup.com/javascript-conway/" target="_blank">
+              <img src="/js-AR-official-logo.jpg" alt="Central Arkansas JavaScript Logo" />
+            </a>
+            <a className="card-description" href="https://www.meetup.com/javascript-conway/" target="_blank">
+              <h2>Central Arkansas JavaScript</h2>
+              <p>Learn more about the latest JavaScript frameworks, utilities, and tricks through our meetup group! Co-founded by Caleb Trachte, and two other local senior developers.
+              </p>
+            </a>
+          </li>
 
-          <a
-            href="https://www.airbnb.com/h/trachtenhaus"
-            className="card"
-          >
-            <h3>Airbnb SuperHost!</h3>
-            <img src="/airbnb-logo-red.jpg" height="150" width="250" alt="Airbnb logo" />
-            <p>
-              Caleb Trachte and his wife host guests at their full-service bed and breakfast in Cabot, AR!
-            </p>
-          </a>
-          <a
-            href="https://www.facebook.com/SunfireSauce"
-            className="card"
-          >
-            <h3>Sunfire Hot Sauce</h3>
-            <img src="/Sunfire-logo.jpg" height="250" width="250" alt="Sunfire logo" />
-            <p>
-            Handcrafted, small-batch hot sauce made by Caleb and Amy Trachte in Cabot, Arkansas from fresh garden-grown ingredients. We will be posting current batches so follow us on Facebook and Instagram!
-            </p>
-          </a>
-        </div>
+          <li className="card">
+            <a id="sunfireImage" className="card-image" href="https://www.facebook.com/SunfireSauce" target="_blank">
+              <img src="/Sunfire-logo.jpg" alt="Sunfire Hot Sauce Logo" />
+            </a>
+            <a className="card-description" href="https://www.facebook.com/SunfireSauce" target="_blank">
+              <h2>Sunfire Hot Sauce</h2>
+              <p>Handcrafted, small-batch hot sauce made by Caleb and Amy Trachte in Cabot, Arkansas from fresh garden-grown ingredients. We will be posting current batches so follow us on Facebook and Instagram!
+              </p>
+            </a>
+          </li>
+
+        </ul>
       </main>
 
       <footer>
@@ -79,6 +92,84 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+      .card-image {
+        display: block;
+        background: #fff center center no-repeat;
+        background-size: cover;
+      }
+      
+      .card-image > img {
+        display: block;
+        width: 100%;
+        opacity: 0; /* visually hide the img element */
+      }
+      
+      #sunfireImage {
+        background-image: url("/Sunfire-logo.jpg");
+      }
+      #airbnbImage {
+        background-image: url("/airbnb-logo-red.jpg");
+      }
+      #CAJOfficialLogo {
+        background-image: url("/js-AR-official-logo.jpg");
+      }
+      #momentDatepickerImage {
+        background-image: url("/npm-logo.png");
+      }
+      #githubImage {
+        background-image: url("/github-logo.png");
+      }
+      
+      /* Layout Styles */
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      
+      .card-list {
+        display: block;
+        margin: 1rem auto;
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        list-style: none;
+      }
+      
+      .card {
+        display: inline-block;
+        width: 90%;
+        max-width: 20rem;
+        margin: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        overflow: hidden;
+        box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+      }
+      
+      .card:hover {
+        transform: translateY(-0.5rem) scale(1.0125);
+        box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+      }
+      
+      .card-description {
+        display: block;
+        padding: 1em 0.5em;
+        color: #515151;
+        text-decoration: none;
+      }
+      
+      .card-description > h2 {
+        margin: 0 0 0.5em;
+      }
+      
+      .card-description > p {
+        margin: 0;
+      }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -116,38 +207,6 @@ export default function Home() {
           align-items: center;
         }
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
         code {
           background: #fafafa;
           border-radius: 5px;
@@ -155,46 +214,6 @@ export default function Home() {
           font-size: 1.1rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
         }
 
         .logo {
