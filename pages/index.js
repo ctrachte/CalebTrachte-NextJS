@@ -8,23 +8,32 @@ export default function Home() {
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.div initial="hidden" animate="visible" variants={{
-          hidden: {
-            scale: .3,
-            opacity: 0
-          },
-          visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-              delay: .4
-            }
-          },
+      <motion.div
+        whileHover={{
+          position: 'relative',
+          zIndex: 1,
+          scale: [1, 1.2, 0.7],
+          rotate: [0, 10, -10, 0],
+          transition: {
+            duration: .2
+          }
         }}>
-          <h1 className="title">
-            Welcome to my Personal Site!
-          </h1>
-        </motion.div>
+        <h1 className="title">
+          Caleb Trachte
+        </h1>
+      </motion.div>
+      <motion.div
+        whileHover={{
+          position: 'relative',
+          zIndex: 1,
+          scale: [1, 1.2, 0.7],
+          rotate: [0, 10, -10, 0],
+          transition: {
+            duration: .2
+          }
+        }}>
+        <p className="headerText">PC and Video Game Nerd, Software Developer, Creator of Craft Hot Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married, Reformed 1689. Learn more about me:</p>
+      </motion.div>
       <main>
 
         <ul className="card-list">
@@ -91,14 +100,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
+        <p>&copy; 2021 Caleb Trachte, powered by NextJS and Vercel.</p>
       </footer>
 
       <style jsx>{`
@@ -206,18 +208,34 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
+        .headerText {
+          width: 100%;
+          height: 100px;
+          border-bottom: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          margin: 0px;
+        }
+
+        h1 {
+          margin-bottom: 0px;
+          font-family: monospace;
+        }
 
         footer img {
           margin-left: 0.5rem;
         }
 
-        footer a {
+        footer {
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        code {
+        .code {
           background: #fafafa;
           border-radius: 5px;
           padding: 0.75rem;
