@@ -12,10 +12,17 @@ export default function Home() {
         whileHover={{
           position: 'relative',
           zIndex: 1,
-          scale: [1, 1.2, 0.7],
-          rotate: [0, 10, -10, 0],
+          scale: [1,1.5],
+          filter: [
+            'hue-rotate(0)',
+            'hue-rotate(45deg)',
+            'hue-rotate(90deg)',
+            'hue-rotate(135deg)',
+            'hue-rotate(180deg)',
+            'hue-rotate(225deg)',
+          ],
           transition: {
-            duration: .2
+            duration: 6
           }
         }}>
         <h1 className="title">
@@ -26,10 +33,17 @@ export default function Home() {
         whileHover={{
           position: 'relative',
           zIndex: 1,
-          scale: [1, 1.2, 0.7],
-          rotate: [0, 10, -10, 0],
+          scale: [1, 1.1],
+          filter: [
+            'hue-rotate(0)',
+            'hue-rotate(45deg)',
+            'hue-rotate(90deg)',
+            'hue-rotate(135deg)',
+            'hue-rotate(180deg)',
+            'hue-rotate(225deg)',
+          ],
           transition: {
-            duration: .2
+            duration: 6
           }
         }}>
         <p className="headerText">PC and Video Game Nerd, Software Developer, Creator of Craft Hot Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married, Reformed 1689. Learn more about me:</p>
@@ -158,6 +172,7 @@ export default function Home() {
         font-size: 1rem;
         text-decoration: none;
         overflow: hidden;
+        background-color: white;
         box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
         transition: transform 0.1s ease-in-out, box-shadow 0.1s;
       }
@@ -218,11 +233,13 @@ export default function Home() {
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
           margin: 0px;
+          color: purple;
         }
 
         h1 {
           margin-bottom: 0px;
-          font-family: monospace;
+          font-family:  Liberation Mono, Monaco, Courier New, monospace;
+          color: purple;
         }
 
         footer img {
@@ -252,6 +269,7 @@ export default function Home() {
       <style jsx global>{`
         html,
         body {
+          background-color: #F6F6EB;
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
