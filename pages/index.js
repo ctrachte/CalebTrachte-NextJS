@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -7,15 +8,24 @@ export default function Home() {
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <motion.div initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: .3,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: .4
+            }
+          },
+        }}>
+          <h1 className="title">
+            Welcome to my Personal Site!
+          </h1>
+        </motion.div>
       <main>
-        <h1 className="title">
-          Hello Internet Traveler!
-        </h1>
-
-        <p className="description">
-          Get to know me (Caleb Trachte) by browsing some of my projects, ventures, open-source code, and more:
-        </p>
 
         <ul className="card-list">
 
@@ -218,13 +228,6 @@ export default function Home() {
 
         .logo {
           height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
         }
       `}</style>
 
