@@ -236,9 +236,10 @@ export default function Home() {
           color: purple;
         }
 
-        .headerText, .title {
-          margin-left: 10%;
-          margin-right: 10%;
+        @media only screen and (max-width: 800px) {
+          .headerText, .title {
+            text-align: center;
+          }
         }
 
         h1 {
