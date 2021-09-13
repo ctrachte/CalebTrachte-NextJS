@@ -236,6 +236,11 @@ export default function Home() {
           color: purple;
         }
 
+        .headerText, .title {
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+
         h1 {
           margin-bottom: 0px;
           font-family:  Liberation Mono, Monaco, Courier New, monospace;
