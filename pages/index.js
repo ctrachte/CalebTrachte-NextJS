@@ -109,6 +109,18 @@ export default function Home() {
               </p>
             </a>
           </li>
+          
+          <li className="card">
+            <a id="linkedInImage" className="card-image" href="https://www.linkedin.com/in/caleb-trachte/" target="_blank">
+              <img src="/LinkedIn_logo_initials.png" alt="LinkedIn Logo" />
+            </a>
+            <a className="card-description" href="https://www.linkedin.com/in/caleb-trachte/" target="_blank">
+              <h2>Connect with me!</h2>
+              <p>View employment history, professional thoughts and topics I have shared, and see my connections.
+              </p>
+            </a>
+          </li>
+
 
         </ul>
       </main>
@@ -144,6 +156,9 @@ export default function Home() {
       }
       #githubImage {
         background-image: url("/github-logo.png");
+      }
+      #linkedInImage {
+        background-image: url("/LinkedIn_logo_initials.png");
       }
       
       /* Layout Styles */
@@ -241,6 +256,11 @@ export default function Home() {
             text-align: center;
           }
         }
+
+        @media only screen and (min-width: 992px) {
+          
+        }
+
 
         h1 {
           margin-bottom: 0px;
