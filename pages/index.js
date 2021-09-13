@@ -251,16 +251,15 @@ export default function Home() {
           color: purple;
         }
 
-        @media only screen and (max-width: 800px) {
-          .headerText, .title {
-            text-align: center;
+        @media only screen and (min-width: 992px) {
+          .card-list {
+            max-width: 1200px;
           }
         }
 
-        @media only screen and (min-width: 992px) {
-          
+        .headerText, .title {
+          text-align: center;
         }
-
 
         h1 {
           margin-bottom: 0px;
