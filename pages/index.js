@@ -77,10 +77,10 @@ export default function Home() {
           </li>
 
           <li className="card">
-            <a id="githubImage" className="card-image" href="https://www.npmjs.com/package/moment-datepicker-js" target="_blank">
+            <a id="githubImage" className="card-image" href="https://www.github.com/ctrachte" target="_blank">
               <img src="/npm-logo.png" alt="NPM Logo" />
             </a>
-            <a className="card-description" href="https://www.npmjs.com/package/moment-datepicker-js"
+            <a className="card-description" href="https://www.github.com/ctrachte"
               target="_blank">
               <h2>Open Source Code</h2>
               <p>Learn about side projects I've been working on, demos and tutorials I've taught, and more!
