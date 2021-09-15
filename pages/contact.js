@@ -50,7 +50,7 @@ export default function Contact() {
                     < label htmlFor='message'>Message</label>
                     < input type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.inputField} />
                 </formGroup>
-                < input type='submit' />
+                < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
             </form >
         </div>
     )
