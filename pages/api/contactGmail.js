@@ -1,41 +1,9 @@
 export default function (req, res) {
-
-    // source code at: https://medium.com/nerd-for-tech/coding-a-contact-form-with-next-js-and-nodemailer-d3a8dc6cd645
-    let nodemailer = require('nodemailer')
+    // source code: https://developers.google.com/gmail/api/quickstart/js
     require('dotenv').config()
-    const PASSWORD = process.env.password
-
-    const transporter = nodemailer.createTransport({
-        port: 465,
-        host: "smtp.gmail.com",
-        auth: {
-            user: 'admin@calebtrachte.com',
-            pass: PASSWORD,
-        },
-        secure: true,
-    })
-    const mailData = {
-        from: 'admin@calebtrachte.com',
-        to: 'cetrachte@hotmail.com',
-        subject: `Contact Message From ${req.body.name}`,
-        text: req.body.message + " | Sent from: " + req.body.email,
-        html: `<div>${req.body.message}</div><p>Sent from:
-        ${req.body.email}</p>`
-    }
-    function sendNodeMail() {
-        transporter.sendMail(mailData, function (err, info) {
-            if (err)
-                console.log(err)
-            else
-                console.log(info)
-        })
-        res.status(200)
-    }
-
-
+    const CLIENT_ID = process.env.CLIENT_ID
+    const API_KEY = process.env.API_KEY
     // Client ID and API key from the Developer Console
-    var CLIENT_ID = '<YOUR_CLIENT_ID>';
-    var API_KEY = '<YOUR_API_KEY>';
 
     // Array of API discovery doc URLs for APIs used by the quickstart
     var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];
