@@ -8,6 +8,25 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    
+    const handleSubmit = (e) => { 
+        e.preventDefault()
+        console.log('Sending Message ...')
+      let data = {
+          name,
+          email,
+          message
+        }
+      fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+      }
+    
     return (
         <div className={styles.container}>
             < form className={styles.main} >
