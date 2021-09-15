@@ -11,7 +11,7 @@ export default function Contact() {
     
     const handleSubmit = (e) => { 
         e.preventDefault()
-        console.log('Sending Message ...')
+        console.log('Sending')
       let data = {
           name,
           email,
@@ -24,9 +24,17 @@ export default function Contact() {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(data)
+        }).then((res) => {
+          console.log('Response received')
+          if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true)
+            setName('')
+            setEmail('')
+            setBody('')
+          }
         })
       }
-    
     return (
         <div className={styles.container}>
             < form className={styles.main} >
