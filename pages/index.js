@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -125,9 +126,7 @@ export default function Home() {
         </ul>
       </main>
 
-      <footer>
-        <p>&copy; 2021 Caleb Trachte, powered by NextJS and Vercel.</p>
-      </footer>
+      <Footer />
 
       <style jsx>{`
       .card-image {
@@ -230,14 +229,6 @@ export default function Home() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
         .headerText {
           width: 100%;
           height: 100px;
@@ -266,17 +257,6 @@ export default function Home() {
           font-family:  Liberation Mono, Monaco, Courier New, monospace;
           color: purple;
         }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         .code {
           background: #fafafa;
           border-radius: 5px;
