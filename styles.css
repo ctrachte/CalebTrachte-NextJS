@@ -135,16 +135,6 @@
       color: purple;
     }
 
-    footer img {
-      margin-left: 0.5rem;
-    }
-
-    footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
     .code {
       background: #fafafa;
       border-radius: 5px;
