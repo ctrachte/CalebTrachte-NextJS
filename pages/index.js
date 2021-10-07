@@ -10,26 +10,15 @@ export default function Home() {
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.div
-        whileHover={{
-          position: 'relative',
-          zIndex: 1,
-          scale: [1, 1.5],
-          filter: [
-            'hue-rotate(0)',
-            'hue-rotate(45deg)',
-            'hue-rotate(90deg)',
-            'hue-rotate(135deg)',
-            'hue-rotate(180deg)',
-            'hue-rotate(225deg)',
-          ],
-          transition: {
-            duration: 6,
-          },
-        }}
-      >
-        <h1 className="title">Caleb Trachte</h1>
-      </motion.div>
+      <div>
+            <a
+              id="logo"
+              className="card-image"
+              href="/"
+            >
+              <img src="/logo.jpg" alt="Caleb Trachte Logo" />
+            </a>
+      </div>
       <motion.div
         whileHover={{
           position: 'relative',
@@ -61,6 +50,9 @@ export default function Home() {
       <Footer />
 
       <style jsx>{`
+        #logo {
+          background-image: url('/logo.jpg');
+        }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
