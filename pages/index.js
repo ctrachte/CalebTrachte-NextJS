@@ -43,9 +43,7 @@ export default function Home() {
       <Footer />
 
       <style jsx>{`
-        #logo {
-          background-image: url('/logo.jpg');
-        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;

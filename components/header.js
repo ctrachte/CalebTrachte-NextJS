@@ -1,12 +1,18 @@
-export default function Header() {
+import Image from 'next/image'
+
+export default function Header(props) {
   return (
-    <header>
-      <div>
-        <a id="logo" className="card-image" href="/">
-          <img src="/logo.jpg" alt="Caleb Trachte Logo" />
+    <header id="header">
+        <a id="logo" href="/">
+          <Image
+            src="/logo.jpg"
+            alt="Caleb Trachte Logo"
+            width={248}
+            height={248}
+            className="headerLogo"
+          />{' '}
         </a>
-      </div>
-      <styles />
+        <styles />
     </header>
   )
 }
