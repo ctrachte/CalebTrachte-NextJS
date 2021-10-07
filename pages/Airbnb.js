@@ -5,9 +5,8 @@ import { motion } from 'framer-motion'
 function Airbnb() {
   return (
     <div className="container">
-    <Head>
-    </Head>
-    <Footer/>
+      <Head></Head>
+      <Footer />
     </div>
   )
 }
