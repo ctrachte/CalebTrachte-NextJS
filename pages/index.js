@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import Cards from '../components/cards'
 
@@ -10,15 +11,7 @@ export default function Home() {
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-            <a
-              id="logo"
-              className="card-image"
-              href="/"
-            >
-              <img src="/logo.jpg" alt="Caleb Trachte Logo" />
-            </a>
-      </div>
+      <Header/>
       <motion.div
         whileHover={{
           position: 'relative',
