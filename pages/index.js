@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import Cards from '../components/cards'
 
@@ -10,26 +11,7 @@ export default function Home() {
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.div
-        whileHover={{
-          position: 'relative',
-          zIndex: 1,
-          scale: [1, 1.5],
-          filter: [
-            'hue-rotate(0)',
-            'hue-rotate(45deg)',
-            'hue-rotate(90deg)',
-            'hue-rotate(135deg)',
-            'hue-rotate(180deg)',
-            'hue-rotate(225deg)',
-          ],
-          transition: {
-            duration: 6,
-          },
-        }}
-      >
-        <h1 className="title">Caleb Trachte</h1>
-      </motion.div>
+      <Header/>
       <motion.div
         whileHover={{
           position: 'relative',
@@ -48,11 +30,7 @@ export default function Home() {
           },
         }}
       >
-        <p className="headerText">
-          PC and Video Game Nerd, Software Developer, Creator of Craft Hot
-          Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married,
-          Reformed 1689. Learn more about me:
-        </p>
+
       </motion.div>
       <main>
         <Cards />
@@ -61,6 +39,7 @@ export default function Home() {
       <Footer />
 
       <style jsx>{`
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
