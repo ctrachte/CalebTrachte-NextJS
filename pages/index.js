@@ -17,41 +17,7 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      <style jsx>{`
-
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        @media only screen and (min-width: 992px) {
-          .card-list {
-            max-width: 1200px;
-          }
-        }
-
-        h1 {
-          margin-bottom: 0px;
-          font-family: Liberation Mono, Monaco, Courier New, monospace;
-          color: purple;
-        }
-
-      `}</style>
-
+      <styles />
       <style jsx global>{`
 
           html, body {
