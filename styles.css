@@ -55,6 +55,7 @@ body {
   font-size: 0;
   text-align: center;
   list-style: none;
+  z-index: 999;
 }
 
 .card {
@@ -68,6 +69,7 @@ body {
   background-color: white;
   box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  z-index: 9999;
 }
 
 .card:hover {
@@ -149,36 +151,11 @@ header {
   background-color:#d3bcc0ff;
   justify-content: left;
   align-items: left;
+  z-index: 9999;
 }
 
 h1 {
   margin-bottom: 0px;
   font-family: Liberation Mono, Monaco, Courier New, monospace;
   color: purple;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.logo {
-  height: 1em;
-}
-
-html,
-body {
-  background-color: #f6f6eb;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
