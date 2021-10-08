@@ -13,7 +13,7 @@ export default function Header() {
         />{' '}
       </a>
       <div className="headerTextContainer">
-        <p class="headerText">
+        <p className="headerText">
           PC and Video Game Nerd, Software Developer, Creator of Craft Hot
           Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married,
           Reformed 1689. Learn more about me:

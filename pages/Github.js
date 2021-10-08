@@ -3,17 +3,14 @@ import Header from '../components/header';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 
-function Github({ posts }) {
+function Github({ profiles }) {
   return (
-
-        <div className="container">
+      <div>
         <Head></Head>
         <Header/>
-        <ul>
-      {profiles.map((profile) => (
-        <li>{profile.title}</li>
-      ))}
-    </ul>
+            {
+              <div>{profiles.bio}</div>
+            }
         <Footer />
       </div>
   )
@@ -27,7 +24,6 @@ export async function getStaticProps() {
   // You can use any data fetching library
   const res = await fetch('https://api.github.com/users/ctrachte');
   const profiles = await res.json();
-  console.log(profiles)
 
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
