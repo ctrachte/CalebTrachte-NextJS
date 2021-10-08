@@ -38,6 +38,9 @@
   background-image: url('/LinkedIn_logo_initials.png');
 }
 
+#githubProfilePic {
+  background-image: url('https://avatars.githubusercontent.com/u/33035056?v=4');
+}
 /* Layout Styles */
 html,
 body {
