@@ -3,7 +3,7 @@ import Header from '../components/header'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 
-function Github({ profile }) {
+function Github({ profile, pinned}) {
   return (
     <div>
       <Head></Head>
@@ -44,12 +44,15 @@ function Github({ profile }) {
 // direct database queries. See the "Technical details" section.
 export async function getStaticProps() {
   // Call an external API endpoint to get user profile
-  const res = await fetch('https://api.github.com/users/ctrachte')
-  const profile = await res.json()
+  const profileInfo = await fetch('https://api.github.com/users/ctrachte');
+  const profile = await profileInfo.json();
+  const pinnedRepos = await fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=ctrachte');
+  const pinned = await pinnedRepos.json();
 
   return {
     props: {
       profile,
+      pinned
     },
     revalidate: 10,
   }
