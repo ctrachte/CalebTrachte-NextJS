@@ -10,7 +10,7 @@ function Github({ profile }) {
       <Header />
       {
         <div>
-          <ul className="card-list">
+          <ul className="card-list left">
             <li className="card">
               <a
                 id="githubProfilePic"
