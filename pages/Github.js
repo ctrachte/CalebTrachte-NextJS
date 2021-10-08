@@ -34,6 +34,7 @@ function Github({ profile }) {
         </div>
       }
       <Footer />
+
     </div>
   )
 }
