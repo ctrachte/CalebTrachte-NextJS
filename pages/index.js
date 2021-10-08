@@ -6,7 +6,7 @@ import Cards from '../components/cards'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Caleb Trachte</title>
         <link rel="icon" href="/favicon.ico" />
@@ -47,7 +47,6 @@ export default function Home() {
                 left: 0;
                 top: 0;
               }
-
               footer img {
                 margin-left: 0.5rem;
               }
