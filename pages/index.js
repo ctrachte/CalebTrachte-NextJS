@@ -47,27 +47,6 @@ export default function Home() {
                 left: 0;
                 top: 0;
               }
-              footer img {
-                margin-left: 0.5rem;
-              }
-              
-              footer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              
-              footer {
-                position: fixed;
-                z-index: 99999;
-                bottom: 0;
-                width: 100%;
-                height: 25px;
-                border-top: 1px solid #eaeaea;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
               
 
       `}</style>
