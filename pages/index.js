@@ -12,26 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <motion.div
-        whileHover={{
-          position: 'relative',
-          zIndex: 1,
-          scale: [1, 1.1],
-          filter: [
-            'hue-rotate(0)',
-            'hue-rotate(45deg)',
-            'hue-rotate(90deg)',
-            'hue-rotate(135deg)',
-            'hue-rotate(180deg)',
-            'hue-rotate(225deg)',
-          ],
-          transition: {
-            duration: 6,
-          },
-        }}
-      >
-
-      </motion.div>
       <main>
         <Cards />
       </main>
