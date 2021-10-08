@@ -3,7 +3,7 @@ import Header from '../components/header'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 
-function Github({ profile, pinned}) {
+function Github({ profile, pinned }) {
   return (
     <div>
       <Head></Head>
@@ -31,10 +31,31 @@ function Github({ profile, pinned}) {
               </a>
             </li>
           </ul>
+          <ul className="card-list right">
+            {pinned.map((repo, index) => (
+            <li className="card" key={index}>
+            <a
+              id="githubImage"
+              className="card-image"
+              href={repo.link}
+              target="_blank"
+            >
+              <img src={profile.avatar_url} alt="Github Avatar" />
+            </a>
+            <a
+              className="card-description"
+              href={repo.link}
+              target="_blank"
+            >
+              <h2>{repo.repo}</h2>
+              <p>{repo.description}</p>
+            </a>
+          </li> 
+           ))}
+          </ul>
         </div>
       }
       <Footer />
-
     </div>
   )
 }
@@ -44,15 +65,16 @@ function Github({ profile, pinned}) {
 // direct database queries. See the "Technical details" section.
 export async function getStaticProps() {
   // Call an external API endpoint to get user profile
-  const profileInfo = await fetch('https://api.github.com/users/ctrachte');
-  const profile = await profileInfo.json();
-  const pinnedRepos = await fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=ctrachte');
-  const pinned = await pinnedRepos.json();
-
+  const profileInfo = await fetch('https://api.github.com/users/ctrachte')
+  const profile = await profileInfo.json()
+  const pinnedRepos = await fetch(
+    'https://gh-pinned-repos-5l2i19um3.vercel.app/?username=ctrachte',
+  )
+  const pinned = await pinnedRepos.json()
   return {
     props: {
       profile,
-      pinned
+      pinned,
     },
     revalidate: 10,
   }
