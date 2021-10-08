@@ -49,14 +49,14 @@ export default function Cards() {
         <a
           id="githubImage"
           className="card-image"
-          href="https://www.github.com/ctrachte"
+          href="/Github"
           target="_blank"
         >
           <img src="/npm-logo.png" alt="NPM Logo" />
         </a>
         <a
           className="card-description"
-          href="https://www.github.com/ctrachte"
+          href="/Github"
           target="_blank"
         >
           <h2>Open Source Code</h2>
