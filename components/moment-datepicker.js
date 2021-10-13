@@ -20,9 +20,6 @@ const Datepicker = () => {
       ></script>
       <h1>Datepicker</h1>
       <div ref={myContainer}></div>
-      <style jsx>{`
-
-      `}</style>
     </>
   )
 }
