@@ -1,11 +1,12 @@
 import Footer from '../components/footer'
 import Head from 'next/head'
-import { motion } from 'framer-motion'
+import MomentDatepicker from '../components/moment-datepicker'
 
 function Datepicker() {
   return (
     <div className="container">
       <Head></Head>
+      <MomentDatepicker />
       <Footer />
     </div>
   )
