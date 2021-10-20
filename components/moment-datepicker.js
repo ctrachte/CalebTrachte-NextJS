@@ -7,7 +7,7 @@ const Datepicker = () => {
   let datepicker
   useEffect(() => {
     datepicker = new momentDatepicker({ containerElement: myContainer.current })
-    console.log(myContainer.current, datepicker)
+    //    console.log(myContainer.current, datepicker)
   })
 
   return (
