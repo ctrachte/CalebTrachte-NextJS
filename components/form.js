@@ -14,7 +14,7 @@ class form extends React.Component {
     }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+      console.table(this.state);
       event.preventDefault();
     }
   
@@ -30,3 +30,4 @@ class form extends React.Component {
       );
     }
   }
+export default form
