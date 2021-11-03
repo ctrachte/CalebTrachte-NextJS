@@ -1,6 +1,7 @@
 import momentDatepicker from 'moment-datepicker-js'
 //With newer versions of React you can use and manipulate the DOM via hooks like this:
 import React, { useEffect, useRef } from 'react'
+import Form from './form'
 
 const Datepicker = () => {
 
@@ -59,6 +60,7 @@ const Datepicker = () => {
         referrerPolicy="no-referrer"
       ></script>
       <h1>Datepicker</h1>
+      <Form></Form>
       <div ref={myContainer}></div>
     </>
   )
