@@ -12,6 +12,7 @@ class form extends React.Component {
       timePicker: true,
       startDateLabel: 'Start Date',
       endDateLabel: 'End Date',
+      containerElement: this.props.containerElement
     }
 
     this.handleSingleDateChange = this.handleSingleDateChange.bind(this)
@@ -26,89 +27,83 @@ class form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    console.table(this.state)
+    this.props.updateDatepicker(this.state);
+    console.log(this.state)
   }
   handleSingleDateChange(event) {
     this.setState({ singleDate: event.target.checked })
-    console.table(event.target.checked)
-    console.table(this.state)
   }
   handlePresetMenuChange(event) {
     this.setState({ presetMenu: event.target.checked })
-    console.table(this.state)
   }
   handleAutoCloseChange(event) {
     // console.table(this.state)
     this.setState({ autoClose: event.target.checked })
-    console.table(this.state)
   }
   handleMilitaryTimeChange(event) {
     this.setState({ militaryTime: event.target.checked })
-    console.table(this.state)
   }
   handleTimePickerChange(event) {
     this.setState({ timePicker: event.target.checked })
-    this.setState({ timePicker: event.target.checked })
-
-    console.table(this.state)
   }
   handleStartDateLabelChange(event) {
     this.setState({ startDateLabel: event.target.value })
-    console.table(this.state)
   }
   handleEndDateLabelChange(event) {
     this.setState({ endDateLabel: event.target.value })
-    console.table(this.state)
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <h3>Datepicker Options:</h3>
+        <p> Choose options to configure the moment-datepicker with, and click submit to configure.</p>
+        <hr/>
         <label>
-          singleDate:
           <input
             type="checkbox"
             checked={this.state.singleDate}
             value={this.state.singleDate}
             onChange={this.handleSingleDateChange}
           />
+          singleDate
         </label>
         <label>
-          presetMenu:
           <input
             type="checkbox"
             checked={this.state.presetMenu}
             value={this.state.presetMenu}
             onChange={this.handlePresetMenuChange}
           />
+          presetMenu
         </label>
         <label>
-          autoClose:
           <input
             type="checkbox"
             value={this.state.autoClose}
             checked={this.state.autoClose}
             onChange={this.handleAutoCloseChange}
           />
+          autoClose
         </label>
         <label>
-          militaryTime:
           <input
             type="checkbox"
             value={this.state.militaryTime}
             checked={this.state.militaryTime}
             onChange={this.handleMilitaryTimeChange}
           />
+          militaryTime
         </label>
         <label>
-          timePicker:
           <input
             type="checkbox"
             value={this.state.timePicker}
             checked={this.state.timePicker}
             onChange={this.handleTimePickerChange}
           />
+          timePicker
         </label>
+        <hr/>
         <label>
           startDateLabel:
           <input
@@ -125,6 +120,7 @@ class form extends React.Component {
             onChange={this.handleEndDateLabelChange}
           />
         </label>
+        <hr/>
         <input type="submit" />
       </form>
     )

@@ -11,9 +11,7 @@ const Datepicker = () => {
 
   useEffect(() => {
     // reset container and options for datepicker
-    myContainer.current.innerHTML = "";
     let initialOptions = {
-      containerElement: myContainer.current,
       presetMenu: true,
       singleDate: false,
       autoClose: false,
@@ -48,6 +46,8 @@ const Datepicker = () => {
 
   //method to initialize datepicker
   function initDatepicker(options) {
+    myContainer.current.innerHTML = "";
+    options.containerElement = myContainer.current;
     return new momentDatepicker(options);
   }
 
@@ -60,7 +60,7 @@ const Datepicker = () => {
         referrerPolicy="no-referrer"
       ></script>
       <h1>Datepicker</h1>
-      <Form></Form>
+      <Form updateDatepicker={initDatepicker} containerElement={myContainer.current}></Form>
       <div ref={myContainer}></div>
     </>
   )
