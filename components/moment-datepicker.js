@@ -39,11 +39,6 @@ const Datepicker = () => {
     //initialize datepicker with options
     datepicker = initDatepicker(initialOptions);
   })
-
-  let changeOptions = (e) => {
-    //code to get and set options from UI;
-  }; 
-
   //method to initialize datepicker
   function initDatepicker(options) {
     myContainer.current.innerHTML = "";
@@ -59,9 +54,9 @@ const Datepicker = () => {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       ></script>
-      <h1>Datepicker</h1>
+      <h1 className="datepicker-heading">Datepicker</h1>
       <Form updateDatepicker={initDatepicker} containerElement={myContainer.current}></Form>
-      <div ref={myContainer}></div>
+      <div className="datpicker-container" ref={myContainer}></div>
     </>
   )
 }

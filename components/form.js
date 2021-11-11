@@ -54,8 +54,7 @@ class form extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h3>Datepicker Options:</h3>
+      <form onSubmit={this.handleSubmit} className="form">
         <p> Choose options to configure the moment-datepicker with, and click submit to configure.</p>
         <hr/>
         <label>
@@ -108,6 +107,7 @@ class form extends React.Component {
           startDateLabel:
           <input
             type="text"
+            className="formText"
             value={this.state.startDateLabel}
             onChange={this.handleStartDateLabelChange}
           />
@@ -115,13 +115,14 @@ class form extends React.Component {
         <label>
           endDateLabel:
           <input
+            className="formText"
             type="text"
             value={this.state.endDateLabel}
             onChange={this.handleEndDateLabelChange}
           />
         </label>
         <hr/>
-        <input type="submit" />
+        <input className="submit" type="submit" />
       </form>
     )
   }

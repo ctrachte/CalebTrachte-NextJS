@@ -36,6 +36,60 @@ html, body {
   top: 0;
 }
 
+.form {
+  position : relative;
+  border: #69306dff;
+  margin: 1em;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.form > h3 {
+  font : 1em "typewriter", monospace;
+  align-self : end;
+}
+.form > label {
+  width: 100%;
+}
+.form {
+  font : 1em "typewriter", monospace;
+}
+.form > .submit {
+  padding      : 5px;
+  font         : bold 1em monospace;
+  width: 100%;
+  border       : 2px solid #0e103dff;
+  border-radius: 5px;
+  background   : none;
+  cursor       : pointer;
+}
+.submit:after {
+  content      : " >>>";
+}
+input:focus, textarea:focus {
+  background   : #d3bcc0ff;
+  border-radius: 5px;
+}
+input, textarea {
+  font    : 1.4em/1.5em sans-serif;
+  border-radius: 5px;
+  border: solid #d3bcc0ff;
+  margin  : 0;
+  width   : 75%;
+  background : none;
+}
+.formText {
+  width: 100%;
+}
+.submit:hover,
+.submit:focus {
+  outline     : none;
+  background  : #0e103dff;
+  color       : #FFF;
+}
+.datepicker-heading {
+  margin-top: 270px;
+}
+
 .card-image {
   display: block;
   background: #fff center center no-repeat;
@@ -266,7 +320,9 @@ h1 {
 }
  
 .DatepickerContainer {
-  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
