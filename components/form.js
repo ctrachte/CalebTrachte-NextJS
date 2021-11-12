@@ -5,7 +5,9 @@ class form extends React.Component {
     super(props)
 
     this.state = {
-      containerElement: this.props.containerElement
+      containerElement: this.props.containerElement,
+      startDateLabel: "Start Date",
+      endDateLabel: "End Date"
     }
 
     this.handleSingleDateChange = this.handleSingleDateChange.bind(this)
