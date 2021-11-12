@@ -44,6 +44,12 @@ const Datepicker = () => {
     myContainer.current.innerHTML = "";
     options.containerElement = myContainer.current;
     options.containerElement.style.setProperty('--Primary', options.primaryColor);
+    options.containerElement.style.setProperty('--Secondary', options.secondaryColor);
+    options.containerElement.style.setProperty('--Shadow', options.shadowColor);
+    options.containerElement.style.setProperty('--Selection', options.selectionColor);
+    options.containerElement.style.setProperty('--Accent', options.accentColor);
+    options.containerElement.style.setProperty('--Trouble', options.troubleColor);
+
     return new momentDatepicker(options);
   }
 

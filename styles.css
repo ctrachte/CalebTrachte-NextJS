@@ -76,9 +76,11 @@ input, textarea {
   margin  : 0;
   width   : 75%;
   background : none;
+  display: block;
 }
 .formText {
   width: 100%;
+  display: block;
 }
 .submit:hover,
 .submit:focus {
@@ -100,6 +102,20 @@ input, textarea {
   display: block;
   width: 100%;
   opacity: 0; /* visually hide the img element */
+}
+
+.colorPicker > input {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  display:block;
+}
+
+.colorPicker {
+  padding:5px;
 }
 
 #sunfireImage {

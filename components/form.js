@@ -21,6 +21,12 @@ class form extends React.Component {
     this.handleStartDateLabelChange = this.handleStartDateLabelChange.bind(this)
     this.handleEndDateLabelChange = this.handleEndDateLabelChange.bind(this)
     this.handlePrimaryColorChange = this.handlePrimaryColorChange.bind(this)
+    this.handleSecondaryColorChange = this.handleSecondaryColorChange.bind(this)
+    this.handleShadowColorChange = this.handleShadowColorChange.bind(this)
+    this.handleSelectionColorChange = this.handleSelectionColorChange.bind(this)
+    this.handleAccentColorChange = this.handleAccentColorChange.bind(this)
+    this.handleTroubleColorChange = this.handleTroubleColorChange.bind(this)
+
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
@@ -62,7 +68,21 @@ class form extends React.Component {
   }
   handlePrimaryColorChange(event) {
     this.setState({ primaryColor: event.target.value })
-    console.log(event.target.value)
+  }
+  handleShadowColorChange(event) {
+    this.setState({ shadowColor: event.target.value })
+  }
+  handleSelectionColorChange(event) {
+    this.setState({ selectionColor: event.target.value })
+  }
+  handleAccentColorChange(event) {
+    this.setState({ accentColor: event.target.value })
+  }
+  handleTroubleColorChange(event) {
+    this.setState({ troubleColor: event.target.value })
+  }
+  handleSecondaryColorChange(event) {
+    this.setState({ secondaryColor: event.target.value })
   }
   render() {
     return (
@@ -160,13 +180,53 @@ class form extends React.Component {
             onChange={this.handleEndDateLabelChange}
           />
         </label>
-        <label>
+        <label className="colorPicker">
+          Primary Color
           <input
             type="color"
             value={this.state.primaryColor}
             onChange={this.handlePrimaryColorChange}
           />
-          Primary Color
+        </label>
+        <label className="colorPicker">
+          Secondary Color
+          <input
+            type="color"
+            value={this.state.secondaryColor}
+            onChange={this.handleSecondaryColorChange}
+          />
+        </label>
+        <label className="colorPicker">
+          Shadow Color
+          <input
+            type="color"
+            value={this.state.shadowColor}
+            onChange={this.handleShadowColorChange}
+          />
+        </label>
+        <label className="colorPicker">
+          Selection Color
+          <input
+            type="color"
+            value={this.state.selectionColor}
+            onChange={this.handleSelectionColorChange}
+          />
+        </label>
+        <label className="colorPicker">
+          Accent Color
+          <input
+            type="color"
+            value={this.state.accentColor}
+            onChange={this.handleAccentColorChange}
+          />
+        </label>
+        <label className="colorPicker">
+          Trouble Color
+          <input
+            type="color"
+            value={this.state.troubleColor}
+            onChange={this.handleTroubleColorChange}
+          />
         </label>
         <hr/>
         <input className="submit" type="submit" />
