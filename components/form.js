@@ -8,6 +8,12 @@ class form extends React.Component {
       containerElement: this.props.containerElement,
       startDateLabel: 'Start Date',
       endDateLabel: 'End Date',
+      primaryColor: "#f2d7eeff",
+      secondaryColor: "#d3bcc0ff",
+      selectionColor: "#a5668bff",
+      shadowColor: "#0e103dff",
+      troubleColor: "#69306dff",
+      accentColor: "#69306dff",
     }
 
     this.handleSingleDateChange = this.handleSingleDateChange.bind(this)
