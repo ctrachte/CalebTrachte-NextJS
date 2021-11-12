@@ -20,6 +20,8 @@ class form extends React.Component {
     this.handleAutoCloseChange = this.handleAutoCloseChange.bind(this)
     this.handleMilitaryTimeChange = this.handleMilitaryTimeChange.bind(this)
     this.handleTimePickerChange = this.handleTimePickerChange.bind(this)
+    this.handleleadingTrailingDates = this.handleleadingTrailingDates.bind(this)
+    this.handleclearDatesChange = this.handleclearDatesChange.bind(this)
     this.handleStartDateLabelChange = this.handleStartDateLabelChange.bind(this)
     this.handleEndDateLabelChange = this.handleEndDateLabelChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -51,6 +53,12 @@ class form extends React.Component {
   }
   handleEndDateLabelChange(event) {
     this.setState({ endDateLabel: event.target.value })
+  }
+  handleclearDatesChange(event) {
+    this.setState({ clearDates: event.target.checked })
+  }
+  handleleadingTrailingDates(event) {
+    this.setState({ leadingTrailingDates: event.target.checked })
   }
   render() {
     return (
@@ -101,6 +109,24 @@ class form extends React.Component {
             onChange={this.handleTimePickerChange}
           />
           timePicker
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value={this.state.leadingTrailingDates}
+            checked={this.state.leadingTrailingDates}
+            onChange={this.handleleadingTrailingDates}
+          />
+          leadingTrailingDates
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value={this.state.clearDates}
+            checked={this.state.clearDates}
+            onChange={this.handleclearDatesChange}
+          />
+          clearDates
         </label>
         <hr/>
         <label>
