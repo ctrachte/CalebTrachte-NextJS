@@ -47,11 +47,12 @@ html, body {
   font : 1em "typewriter", monospace;
   align-self : end;
 }
-.form > label {
-  width: 100%;
-}
 .form {
   font : 1em "typewriter", monospace;
+}
+
+.form label {
+  display: block;
 }
 .form > .submit {
   padding      : 5px;
@@ -62,31 +63,31 @@ html, body {
   background   : none;
   cursor       : pointer;
 }
-.submit:after {
+.form.submit:after {
   content      : " >>>";
 }
-input:focus, textarea:focus {
+.form input:focus, .form  textarea:focus {
   background   : #d3bcc0ff;
   border-radius: 5px;
 }
-input, textarea {
+.form input, .form textarea {
   font    : 1.4em/1.5em sans-serif;
   border-radius: 5px;
   border: solid #d3bcc0ff;
-  margin  : 0;
-  width   : 75%;
+  margin  : 10px;
+  padding: 10px;
   background : none;
 }
 .formText {
-  width: 100%;
+  display: block;
 }
-.submit:hover,
-.submit:focus {
+.form .submit:hover,
+.form .submit:focus {
   outline     : none;
   background  : #0e103dff;
   color       : #FFF;
 }
-.datepicker-heading {
+.form .datepicker-heading {
   margin-top: 270px;
 }
 
@@ -100,6 +101,26 @@ input, textarea {
   display: block;
   width: 100%;
   opacity: 0; /* visually hide the img element */
+}
+
+.form .colorPicker > input {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+
+.form .colorPicker {
+  padding:5px;
+  display:block;
+  height: 60px;
+}
+.form .colorPicker * {
+ vertical-align:middle;
+ justify-content: center;
+ line-height: 60px;
 }
 
 #sunfireImage {
