@@ -20,6 +20,7 @@ class form extends React.Component {
     this.handleDefaultsChange = this.handleDefaultsChange.bind(this)
     this.handleStartDateLabelChange = this.handleStartDateLabelChange.bind(this)
     this.handleEndDateLabelChange = this.handleEndDateLabelChange.bind(this)
+    this.handlePrimaryColorChange = this.handlePrimaryColorChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
@@ -58,6 +59,10 @@ class form extends React.Component {
   }
   handleDefaultsChange(event) {
     this.setState({ defaults: event.target.checked })
+  }
+  handlePrimaryColorChange(event) {
+    this.setState({ primaryColor: event.target.value })
+    console.log(event.target.value)
   }
   render() {
     return (
@@ -154,6 +159,14 @@ class form extends React.Component {
             value={this.state.endDateLabel}
             onChange={this.handleEndDateLabelChange}
           />
+        </label>
+        <label>
+          <input
+            type="color"
+            value={this.state.primaryColor}
+            onChange={this.handlePrimaryColorChange}
+          />
+          Primary Color
         </label>
         <hr/>
         <input className="submit" type="submit" />

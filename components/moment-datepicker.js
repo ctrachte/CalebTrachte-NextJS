@@ -43,6 +43,7 @@ const Datepicker = () => {
   function initDatepicker(options) {
     myContainer.current.innerHTML = "";
     options.containerElement = myContainer.current;
+    options.containerElement.style.setProperty('--Primary', options.primaryColor);
     return new momentDatepicker(options);
   }
 
