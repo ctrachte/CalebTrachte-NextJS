@@ -47,11 +47,12 @@ html, body {
   font : 1em "typewriter", monospace;
   align-self : end;
 }
-.form > label {
-  width: 100%;
-}
 .form {
   font : 1em "typewriter", monospace;
+}
+
+label {
+  display: block;
 }
 .form > .submit {
   padding      : 5px;
@@ -73,13 +74,11 @@ input, textarea {
   font    : 1.4em/1.5em sans-serif;
   border-radius: 5px;
   border: solid #d3bcc0ff;
-  margin  : 0;
-  width   : 75%;
+  margin  : 10px;
+  padding: 10px;
   background : none;
-  display: block;
 }
 .formText {
-  width: 100%;
   display: block;
 }
 .submit:hover,
@@ -111,11 +110,17 @@ input, textarea {
   margin: 5px;
   border: none;
   outline: none;
-  display:block;
 }
 
 .colorPicker {
   padding:5px;
+  display:block;
+  height: 60px;
+}
+.colorPicker * {
+ vertical-align:middle;
+ justify-content: center;
+ line-height: 60px;
 }
 
 #sunfireImage {

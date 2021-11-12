@@ -6,8 +6,8 @@ class form extends React.Component {
 
     this.state = {
       containerElement: this.props.containerElement,
-      startDateLabel: "Start Date",
-      endDateLabel: "End Date"
+      startDateLabel: 'Start Date',
+      endDateLabel: 'End Date',
     }
 
     this.handleSingleDateChange = this.handleSingleDateChange.bind(this)
@@ -32,7 +32,7 @@ class form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    this.props.updateDatepicker(this.state);
+    this.props.updateDatepicker(this.state)
     console.log(this.state)
   }
   handleSingleDateChange(event) {
@@ -87,83 +87,87 @@ class form extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form">
-        <p> Choose options to configure the moment-datepicker with, and click submit to configure.</p>
-        <hr/>
+        <p>
+          {' '}
+          Choose options to configure the moment-datepicker with, and click
+          submit to configure.
+        </p>
+        <hr />
         <label>
+          <span> singleDate </span>
           <input
             type="checkbox"
             checked={this.state.singleDate}
             value={this.state.singleDate}
             onChange={this.handleSingleDateChange}
           />
-          singleDate
         </label>
         <label>
+          <span> presetMenu </span>
           <input
             type="checkbox"
             checked={this.state.presetMenu}
             value={this.state.presetMenu}
             onChange={this.handlePresetMenuChange}
           />
-          presetMenu
         </label>
         <label>
+          <span> autoClose </span>
           <input
             type="checkbox"
             value={this.state.autoClose}
             checked={this.state.autoClose}
             onChange={this.handleAutoCloseChange}
           />
-          autoClose
         </label>
         <label>
+          <span> militaryTime </span>
           <input
             type="checkbox"
             value={this.state.militaryTime}
             checked={this.state.militaryTime}
             onChange={this.handleMilitaryTimeChange}
           />
-          militaryTime
         </label>
         <label>
+          <span> timePicker</span>
           <input
             type="checkbox"
             value={this.state.timePicker}
             checked={this.state.timePicker}
             onChange={this.handleTimePickerChange}
           />
-          timePicker
         </label>
         <label>
+          <span> leadingTrailingDates</span>
           <input
             type="checkbox"
             value={this.state.leadingTrailingDates}
             checked={this.state.leadingTrailingDates}
             onChange={this.handleleadingTrailingDates}
           />
-          leadingTrailingDates
         </label>
         <label>
+         <span> clearDates </span>
           <input
             type="checkbox"
             value={this.state.clearDates}
             checked={this.state.clearDates}
             onChange={this.handleclearDatesChange}
           />
-          clearDates
         </label>
         <label>
+         <span> defaults </span>
           <input
             type="checkbox"
             value={this.state.defaults}
             checked={this.state.defaults}
             onChange={this.handleDefaultsChange}
           />
-          defaults
         </label>
-        <hr/>
+        <hr />
         <label>
-          startDateLabel:
+          <span> startDateLabel: </span>
           <input
             type="text"
             className="formText"
@@ -172,7 +176,7 @@ class form extends React.Component {
           />
         </label>
         <label>
-          endDateLabel:
+          <span> endDateLabel: </span>
           <input
             className="formText"
             type="text"
@@ -180,8 +184,9 @@ class form extends React.Component {
             onChange={this.handleEndDateLabelChange}
           />
         </label>
+        <hr />
         <label className="colorPicker">
-          Primary Color
+          <span> Primary Color </span>
           <input
             type="color"
             value={this.state.primaryColor}
@@ -189,7 +194,7 @@ class form extends React.Component {
           />
         </label>
         <label className="colorPicker">
-          Secondary Color
+          <span> Secondary Color </span>
           <input
             type="color"
             value={this.state.secondaryColor}
@@ -197,7 +202,7 @@ class form extends React.Component {
           />
         </label>
         <label className="colorPicker">
-          Shadow Color
+          <span> Shadow Color</span>
           <input
             type="color"
             value={this.state.shadowColor}
@@ -205,7 +210,7 @@ class form extends React.Component {
           />
         </label>
         <label className="colorPicker">
-          Selection Color
+         <span> Selection Color </span>
           <input
             type="color"
             value={this.state.selectionColor}
@@ -213,7 +218,7 @@ class form extends React.Component {
           />
         </label>
         <label className="colorPicker">
-          Accent Color
+          <span> Accent Color </span>
           <input
             type="color"
             value={this.state.accentColor}
@@ -221,14 +226,14 @@ class form extends React.Component {
           />
         </label>
         <label className="colorPicker">
-          Trouble Color
+          <span> Trouble Color </span>
           <input
             type="color"
             value={this.state.troubleColor}
             onChange={this.handleTroubleColorChange}
           />
         </label>
-        <hr/>
+        <hr />
         <input className="submit" type="submit" />
       </form>
     )
