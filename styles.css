@@ -51,7 +51,7 @@ html, body {
   font : 1em "typewriter", monospace;
 }
 
-label {
+.form label {
   display: block;
 }
 .form > .submit {
@@ -63,14 +63,14 @@ label {
   background   : none;
   cursor       : pointer;
 }
-.submit:after {
+.form.submit:after {
   content      : " >>>";
 }
-input:focus, textarea:focus {
+.form input:focus, .form  textarea:focus {
   background   : #d3bcc0ff;
   border-radius: 5px;
 }
-input, textarea {
+.form input, .form textarea {
   font    : 1.4em/1.5em sans-serif;
   border-radius: 5px;
   border: solid #d3bcc0ff;
@@ -81,13 +81,13 @@ input, textarea {
 .formText {
   display: block;
 }
-.submit:hover,
-.submit:focus {
+.form .submit:hover,
+.form .submit:focus {
   outline     : none;
   background  : #0e103dff;
   color       : #FFF;
 }
-.datepicker-heading {
+.form .datepicker-heading {
   margin-top: 270px;
 }
 
@@ -103,7 +103,7 @@ input, textarea {
   opacity: 0; /* visually hide the img element */
 }
 
-.colorPicker > input {
+.form .colorPicker > input {
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -112,12 +112,12 @@ input, textarea {
   outline: none;
 }
 
-.colorPicker {
+.form .colorPicker {
   padding:5px;
   display:block;
   height: 60px;
 }
-.colorPicker * {
+.form .colorPicker * {
  vertical-align:middle;
  justify-content: center;
  line-height: 60px;
