@@ -5,13 +5,6 @@ class form extends React.Component {
     super(props)
 
     this.state = {
-      singleDate: false,
-      presetMenu: true,
-      autoClose: false,
-      militaryTime: false,
-      timePicker: true,
-      startDateLabel: 'Start Date',
-      endDateLabel: 'End Date',
       containerElement: this.props.containerElement
     }
 
@@ -22,6 +15,7 @@ class form extends React.Component {
     this.handleTimePickerChange = this.handleTimePickerChange.bind(this)
     this.handleleadingTrailingDates = this.handleleadingTrailingDates.bind(this)
     this.handleclearDatesChange = this.handleclearDatesChange.bind(this)
+    this.handleDefaultsChange = this.handleDefaultsChange.bind(this)
     this.handleStartDateLabelChange = this.handleStartDateLabelChange.bind(this)
     this.handleEndDateLabelChange = this.handleEndDateLabelChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -59,6 +53,9 @@ class form extends React.Component {
   }
   handleleadingTrailingDates(event) {
     this.setState({ leadingTrailingDates: event.target.checked })
+  }
+  handleDefaultsChange(event) {
+    this.setState({ defaults: event.target.checked })
   }
   render() {
     return (
@@ -127,6 +124,15 @@ class form extends React.Component {
             onChange={this.handleclearDatesChange}
           />
           clearDates
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value={this.state.defaults}
+            checked={this.state.defaults}
+            onChange={this.handleDefaultsChange}
+          />
+          defaults
         </label>
         <hr/>
         <label>
