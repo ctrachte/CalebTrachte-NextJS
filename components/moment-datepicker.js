@@ -1,6 +1,7 @@
+
 import momentDatepicker from 'moment-datepicker-js'
 //With newer versions of React you can use and manipulate the DOM via hooks like this:
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Form from './form'
 
 const Datepicker = () => {
@@ -11,9 +12,7 @@ const Datepicker = () => {
 
   useEffect(() => {
     // reset container and options for datepicker
-    myContainer.current.innerHTML = "";
     let initialOptions = {
-      containerElement: myContainer.current,
       presetMenu: true,
       singleDate: false,
       autoClose: false,
@@ -41,13 +40,18 @@ const Datepicker = () => {
     //initialize datepicker with options
     datepicker = initDatepicker(initialOptions);
   })
-
-  let changeOptions = (e) => {
-    //code to get and set options from UI;
-  }; 
-
   //method to initialize datepicker
   function initDatepicker(options) {
+    myContainer.current.innerHTML = "";
+    options.containerElement = myContainer.current;
+    if (options.primaryColor) {
+      options.containerElement.style.setProperty('--Primary', options.primaryColor);
+      options.containerElement.style.setProperty('--Secondary', options.secondaryColor);
+      options.containerElement.style.setProperty('--Shadow', options.shadowColor);
+      options.containerElement.style.setProperty('--Selection', options.selectionColor);
+      options.containerElement.style.setProperty('--Accent', options.accentColor);
+      options.containerElement.style.setProperty('--Trouble', options.troubleColor);
+    }
     return new momentDatepicker(options);
   }
 
@@ -59,9 +63,9 @@ const Datepicker = () => {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       ></script>
-      <h1>Datepicker</h1>
-      <Form></Form>
-      <div ref={myContainer}></div>
+      <h1 className="datepicker-heading">Datepicker</h1>
+      <Form updateDatepicker={initDatepicker} containerElement={myContainer.current}></Form>
+      <div className="datpicker-container" ref={myContainer}></div>
     </>
   )
 }

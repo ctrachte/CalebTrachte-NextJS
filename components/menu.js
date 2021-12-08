@@ -17,7 +17,7 @@ class SideMenu extends React.Component {
 
   render() {
     return (
-      <div class="SideMenuContainer">
+      <div className="SideMenuContainer">
       <ProSidebar>
         <Menu iconShape="square">
           <MenuItem>Example Implementation</MenuItem>
