@@ -2,7 +2,7 @@ import React from "react";
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHammer, faList, faCode, faFileExport } from '@fortawesome/free-solid-svg-icons'
+import { faHammer, faList, faCode, faFileExport, faPlug } from '@fortawesome/free-solid-svg-icons'
 
 class SideMenu extends React.Component {
   constructor(props) {
@@ -35,6 +35,7 @@ class SideMenu extends React.Component {
         <Menu>
           <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faHammer} />}>Datepicker Sandbox</MenuItem>
           <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faFileExport} />}>Sandbox Export</MenuItem>
+          <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faPlug} />}>Getting Started</MenuItem>
           <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
             <MenuItem onClick={this.props.DatepickerScroll}>Initialization</MenuItem>
             <MenuItem onClick={this.props.DatepickerScroll}>singleDate</MenuItem>
