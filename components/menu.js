@@ -7,12 +7,19 @@ import { faHammer, faPlay } from '@fortawesome/free-solid-svg-icons'
 class SideMenu extends React.Component {
   constructor(props) {
     super(props);
-    // Don't call this.setState() here!
+
+    this.myRef = React.createRef();
+
     this.state = { collapsed: true };
+
     this.Open = this.Open.bind(this);
     this.hoverMenu = this.hoverMenu.bind(this);
     this.Close = this.Close.bind(this);
+    this.executeScroll = this.executeScroll.bind(this);
   }
+
+
+  executeScroll = () => this.myRef.current.scrollIntoView();    
 
   hoverMenu(event) {
     event.preventDefault();
@@ -31,7 +38,7 @@ class SideMenu extends React.Component {
       <div className="SideMenuContainer">
       <ProSidebar collapsed={this.state.collapsed} onMouseEnter={this.hoverMenu} onMouseLeave={this.hoverMenu} >
         <Menu>
-          <MenuItem icon={<FontAwesomeIcon icon={faPlay} />}>Datepicker Sandbox</MenuItem>
+          <MenuItem ref={this.myRef} onClick={this.executeScroll} icon={<FontAwesomeIcon icon={faPlay} />}>Datepicker Sandbox</MenuItem>
           <SubMenu title="Documentation" icon={<FontAwesomeIcon icon={faHammer} />}>
             <MenuItem>Initialization</MenuItem>
             <MenuItem>.Value()</MenuItem>
