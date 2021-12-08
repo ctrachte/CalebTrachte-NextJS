@@ -18,7 +18,7 @@ class SideMenu extends React.Component {
   render() {
     return (
       <div className="SideMenuContainer">
-      <ProSidebar>
+      <ProSidebar collapsed={false}>
         <Menu iconShape="square">
           <MenuItem>Example Implementation</MenuItem>
           <SubMenu title="Documentation">
