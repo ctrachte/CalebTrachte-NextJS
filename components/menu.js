@@ -2,24 +2,20 @@ import React from "react";
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHammer, faList } from '@fortawesome/free-solid-svg-icons'
+import { faHammer, faList, faCode, faFileExport } from '@fortawesome/free-solid-svg-icons'
 
 class SideMenu extends React.Component {
   constructor(props) {
     super(props);
 
-    this.myRef = React.createRef();
+    this.initRef = React.createRef();
 
     this.state = { collapsed: true };
 
     this.Open = this.Open.bind(this);
     this.hoverMenu = this.hoverMenu.bind(this);
     this.Close = this.Close.bind(this);
-    this.executeScroll = this.executeScroll.bind(this);
   }
-
-
-  executeScroll = () => this.myRef.current.scrollIntoView();    
 
   hoverMenu(event) {
     event.preventDefault();
@@ -38,9 +34,24 @@ class SideMenu extends React.Component {
       <ProSidebar collapsed={this.state.collapsed} onMouseEnter={this.hoverMenu} onMouseLeave={this.hoverMenu} >
         <Menu>
           <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faHammer} />}>Datepicker Sandbox</MenuItem>
-          <SubMenu title="Documentation" icon={<FontAwesomeIcon icon={faList} />}>
-            <MenuItem ref={this.myRef}>Initialization</MenuItem>
-            <MenuItem>.Value()</MenuItem>
+          <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faFileExport} />}>Sandbox Export</MenuItem>
+          <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
+            <MenuItem onClick={this.props.DatepickerScroll}>Initialization</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>singleDate</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>presetMenu </MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>militaryTime </MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>autoClose</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>leadingTrailingDates</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>clearDates</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>clearDates</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>defaults</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>startDateLabel</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>endDateLabel</MenuItem>
+          </SubMenu>
+          <SubMenu title="Methods" icon={<FontAwesomeIcon icon={faCode} />}>
+            <MenuItem onClick={this.props.DatepickerScroll}>.value()</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>.openCalendar()</MenuItem>
+            <MenuItem onClick={this.props.DatepickerScroll}>.closeCalendar()</MenuItem>
           </SubMenu>
         </Menu>
       </ProSidebar>
