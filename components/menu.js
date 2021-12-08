@@ -2,7 +2,7 @@ import React from "react";
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHammer, faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faHammer, faList } from '@fortawesome/free-solid-svg-icons'
 
 class SideMenu extends React.Component {
   constructor(props) {
@@ -25,7 +25,6 @@ class SideMenu extends React.Component {
     event.preventDefault();
     this.state.collapsed ? this.Open() : this.Close();
   }
-
   Open() {
     this.setState({ collapsed: false });
   }
@@ -38,8 +37,8 @@ class SideMenu extends React.Component {
       <div className="SideMenuContainer">
       <ProSidebar collapsed={this.state.collapsed} onMouseEnter={this.hoverMenu} onMouseLeave={this.hoverMenu} >
         <Menu>
-          <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faPlay} />}>Datepicker Sandbox</MenuItem>
-          <SubMenu title="Documentation" icon={<FontAwesomeIcon icon={faHammer} />}>
+          <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faHammer} />}>Datepicker Sandbox</MenuItem>
+          <SubMenu title="Documentation" icon={<FontAwesomeIcon icon={faList} />}>
             <MenuItem ref={this.myRef}>Initialization</MenuItem>
             <MenuItem>.Value()</MenuItem>
           </SubMenu>
