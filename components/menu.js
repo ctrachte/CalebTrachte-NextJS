@@ -17,15 +17,17 @@ class SideMenu extends React.Component {
 
   render() {
     return (
+      <div class="SideMenuContainer">
       <ProSidebar>
         <Menu iconShape="square">
-          <MenuItem>Dashboard</MenuItem>
-          <SubMenu title="Components">
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>Component 2</MenuItem>
+          <MenuItem>Example Implementation</MenuItem>
+          <SubMenu title="Documentation">
+            <MenuItem>Initialization</MenuItem>
+            <MenuItem>.Value()</MenuItem>
           </SubMenu>
         </Menu>
       </ProSidebar>
+      </div>
     );
   }
 }

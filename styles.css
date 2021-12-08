@@ -264,6 +264,11 @@ h1 {
   --Accent: #3362b6;
   --Trouble: #d72027;
 }
+
+.SideMenuContainer {
+  position:fixed;
+  left:0;
+}
  
 .DatepickerContainer {
   margin: 0 auto;
