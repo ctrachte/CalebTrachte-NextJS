@@ -136,6 +136,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1000px;
 }
 
 footer img {

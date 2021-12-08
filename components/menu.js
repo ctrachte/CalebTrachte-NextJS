@@ -38,9 +38,9 @@ class SideMenu extends React.Component {
       <div className="SideMenuContainer">
       <ProSidebar collapsed={this.state.collapsed} onMouseEnter={this.hoverMenu} onMouseLeave={this.hoverMenu} >
         <Menu>
-          <MenuItem ref={this.myRef} onClick={this.executeScroll} icon={<FontAwesomeIcon icon={faPlay} />}>Datepicker Sandbox</MenuItem>
+          <MenuItem onClick={this.props.DatepickerScroll} icon={<FontAwesomeIcon icon={faPlay} />}>Datepicker Sandbox</MenuItem>
           <SubMenu title="Documentation" icon={<FontAwesomeIcon icon={faHammer} />}>
-            <MenuItem>Initialization</MenuItem>
+            <MenuItem ref={this.myRef}>Initialization</MenuItem>
             <MenuItem>.Value()</MenuItem>
           </SubMenu>
         </Menu>
