@@ -16,7 +16,7 @@ export default function Header() {
           I am the creator, and currently contribute and maintain this project almost entirely myself. I have reviewed and accepted some pull requests along the way however, and I am happy to review and merge any helpful PRs as soon as I find time. If you want to contribute checkout the "Contributing" section!
           ```;
     return ReactDom.render(
-      <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />,
+      <ReactMarkdown children={markdown} />,
       document.body
     );
   }
