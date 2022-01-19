@@ -136,7 +136,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1000px;
 }
 
 footer img {
@@ -270,7 +269,13 @@ h1 {
   position:fixed;
   left:0;
 }
- 
+.parent-datepicker-container {
+  margin-left: 100px;
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
 .DatepickerContainer {
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
