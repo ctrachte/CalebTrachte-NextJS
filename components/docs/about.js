@@ -14,7 +14,6 @@ const About = (props) => {
   let markdownRef;
   useEffect(()=>{
      markdownRef = document.getElementById('about-container');
-     console.log(markdownRef)
   });
   const markdown = `
        ## About The Project
@@ -32,7 +31,7 @@ const About = (props) => {
 
        I am the creator, and currently contribute and maintain this project almost entirely myself. I have reviewed and accepted some pull requests along the way however, and I am happy to review and merge any helpful PRs as soon as I find time. If you want to contribute checkout the "Contributing" section!
        `;
-  return null;
+  return <Markdown>{markdown}</Markdown>;
 }
 
 export default About

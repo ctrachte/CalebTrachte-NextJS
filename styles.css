@@ -831,3 +831,8 @@ background-color: var(--blinkColor);
 background-color: var(--blinkColor);
 }
 }
+
+#about-container {
+  z-index: 9999;
+  margin: 0 auto;
+}

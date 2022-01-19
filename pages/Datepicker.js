@@ -18,13 +18,14 @@ const Datepicker = () => {
     <div className="container">
       <Head></Head>
       <Header/>
+      <div id="about-container" ref={aboutRef}>
+        <About/>
+      </div>
       <SideMenu DatepickerScroll={executeScroll} />
       <div className="parent-datepicker-container" ref={datepickerRef}>
         <MomentDatepicker style={styles}/>
       </div>
-      <div id="about-container" ref={aboutRef}>
-      </div>
-      <About/>
+
       <Footer />
     </div>
   )
