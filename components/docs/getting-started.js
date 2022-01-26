@@ -1,28 +1,98 @@
-import React from 'react';
-import { render } from 'react-dom';
-import ReactDom from 'react-dom'
+import React from "react";
+import { render } from "react-dom";
+import ReactDom from "react-dom";
 
 export default function GettingStarted() {
 
-  const markdown =
-    `
-        ## About The Project
-
-        ![DatepickerV1 0 0](https://github.com/ctrachte/Datepicker.js/blob/65613f45108fb9f3d29162b277064d9ef489f54c/Datepicker_V1.0.0.gif)
-
-        There are many great datepickers available on GitHub, however, I didn't find one that really suited my needs. The hardest thing to find is a datepicker that can do a specific combination of features.
-
-        Here's a few other reasons:
-        * I hate (unnecessary) dependencies like jQuery
-        * I want the code to be as lightweight and portable as possible.
-        * I want programmable features that HTML5 input elements don't offer 
-
-        Of course, no one datepicker will serve all projects since your needs may be different. So I'll be adding more to this API in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-        I am the creator, and currently contribute and maintain this project almost entirely myself. I have reviewed and accepted some pull requests along the way however, and I am happy to review and merge any helpful PRs as soon as I find time. If you want to contribute checkout the "Contributing" section!
-        `;
-        
-  ReactDom.render(
-    <Markdown>{markdown}</Markdown>
+  return(
+    <div>
+      <h2 id="getting-started">Getting Started</h2>
+      <h3 id="using-git-and-vanilla-js">Using Git, and Vanilla JS</h3>
+      <ol>
+        <li>
+          Clone the repo
+          <code>git clone https://github.com/ctrachte/Datepicker.js</code>
+        </li>
+        <li>
+          Comment out lines 1 through 12 of <code>Datepicker.js</code> to
+          implement with pure Vanilla JS, HTML and CSS.
+        </li>
+        <li>
+          Open <code>Datepicker.html</code> in your browser of choice to view
+          and test behavior.
+        </li>
+        <li>
+          Place the Datepicker.js and moment.js files in the appropriate
+          directory in your project{" "}
+          <em>
+            (for many, that will be your bundled JS helpers or packages
+            directory)
+          </em>
+          .
+        </li>
+        <li>
+          Adjust the options as necessary for your needs, be sure to supply the
+          Datepicker options with the appropriate container HTML element node.
+        </li>
+      </ol>
+      <h3 id="using-npm-react-next-js-">Using NPM (React, Next.js)</h3>
+      <ol>
+        <li>
+          Install the npm package:
+          <code>npm i --save moment-datepicker-js</code>
+        </li>
+        <li>
+          In your Node Modules directory, You may delete Datepicker.html,
+          DatepickerSmall.css, and Datepicker_V1.0.0.gif, you will not need
+          these files.{" "}
+        </li>
+        <li>
+          <p>
+            Import the Datepicker, and move/scope the DatepickerSmall.css and
+            moment.js files in the appropriate places in your project. Below is
+            a basic example component that should work in Next.js or React for
+            simple implementations:
+          </p>
+        </li>
+        <li>
+          <p>
+            Adjust the options as necessary for your needs, be sure to supply
+            the Datepicker options with the appropriate container HTML element
+            node. <em>See usage section below</em>
+          </p>
+        </li>
+      </ol>
+      <h2 id="usage">Usage</h2>
+      <p>1.) You will first need a recent version of Moment.js installed. </p>
+      <ul>
+        <li>
+          You can use the one included in the helpers folder of this project{" "}
+          <em> _</em>RECOMMENDED<em>_ </em>
+        </li>
+        <li>
+          or download the latest version from{" "}
+          <a href="https://momentjs.com/">their website</a>.
+        </li>
+      </ul>
+      <p>
+        2.) Download and add the Datepicker.js and Datepicker.css files to their
+        appropriate directories in your project.
+      </p>
+      <ul>
+        <li>
+          you will need to reference them in your project in a way that they are
+          in scope to the code you are initializing the datepicker with.{" "}
+        </li>
+      </ul>
+      <p>
+        3.) Below are all the options you can enable using Vanilla JS syntax.
+        For implementation in React, see above <a href="#Using-NPM">NPM</a>{" "}
+        section
+      </p>
+      <p>
+        4.) Adjust the options above to meet the needs of your project, or the
+        project&#39;s component you are implementing the datepicker in.{" "}
+      </p>
+    </div>
   );
 }

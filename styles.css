@@ -297,7 +297,7 @@ header {
   z-index: 9999;
 }
 
-h1 {
+h1, h2 {
   margin-bottom: 0px;
   font-family: Liberation Mono, Monaco, Courier New, monospace;
   color: purple;
@@ -319,7 +319,7 @@ h1 {
   top: 240px;
 }
 .parent-datepicker-container {
-  margin: 20px 5px 25px 85px;
+  margin: 20px 5px 100px 85px;
 }
 
 .DatepickerContainer {

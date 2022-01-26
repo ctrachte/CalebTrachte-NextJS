@@ -20,6 +20,7 @@ const Datepicker = () => {
       <Header/>
       <div id="about-container" ref={aboutRef}>
         <About/>
+        <GettingStarted/>
       </div>
       <SideMenu DatepickerScroll={executeScroll} />
       <div className="parent-datepicker-container" ref={datepickerRef}>
