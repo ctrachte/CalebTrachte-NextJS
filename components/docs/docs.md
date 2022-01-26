@@ -1,0 +1,185 @@
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Dependencies](#dependencies)
+- [Getting Started](#getting-started)
+  - [Using Git, and Vanilla JS](#using-git-and-vanilla-js)
+  - [Using NPM (React, Next.js)](#using-npm-react-nextjs)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Donate!](#donate)
+- [Browser Support:](#browser-support)
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![DatepickerV1 0 0](https://github.com/ctrachte/Datepicker.js/blob/65613f45108fb9f3d29162b277064d9ef489f54c/Datepicker_V1.0.0.gif)
+
+There are many great datepickers available on GitHub, however, I didn't find one that really suited my needs. The hardest thing to find is a datepicker that can do a specific combination of features.
+
+Here's a few other reasons:
+* I hate (unnecessary) dependencies like jQuery
+* I want the code to be as lightweight and portable as possible.
+* I want programmable features that HTML5 `<input type="date"/>` doesn't offer 
+
+Of course, no one datepicker will serve all projects since your needs may be different. So I'll be adding more to this API in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+
+I am the creator, and currently contribute and maintain this project almost entirely myself. I have reviewed and accepted some pull requests along the way however, and I am happy to review and merge any helpful PRs as soon as I find time. If you want to contribute checkout the [Contributing](#contributing) section!
+
+### Dependencies
+
+Since the goal of this project is to use only vanilla JavaScript and Moment.js, we have only one dependency:
+* [Moment.js](https://www.momentjs.com/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+### Using Git, and Vanilla JS
+1. Clone the repo
+```
+git clone https://github.com/ctrachte/Datepicker.js
+```
+2. Comment out lines 1 through 12 of `Datepicker.js` to implement with pure Vanilla JS, HTML and CSS.
+2. Open `Datepicker.html` in your browser of choice to view and test behavior.
+3. Place the Datepicker.js and moment.js files in the appropriate directory in your project *(for many, that will be your bundled JS helpers or packages directory)*.
+4. Adjust the options as necessary for your needs, be sure to supply the Datepicker options with the appropriate container HTML element node.
+
+### Using NPM (React, Next.js)
+1. Install the npm package:
+```
+npm i --save moment-datepicker-js
+```
+3. In your Node Modules directory, You may delete Datepicker.html, DatepickerSmall.css, and Datepicker_V1.0.0.gif, you will not need these files. 
+4. Import the Datepicker, and move/scope the DatepickerSmall.css and moment.js files in the appropriate places in your project.
+ Below is a basic example component that should work in Next.js or React for simple implementations:
+  ```
+    import momentDatepicker from 'moment-datepicker-js'
+    //With newer versions of React you can use and manipulate the DOM via hooks like this:
+    import React, { useEffect, useRef } from 'react'
+
+    const Datepicker = () => {
+      const myContainer = useRef(null)
+      let datepicker
+      useEffect(() => {
+        datepicker = new momentDatepicker({ containerElement: myContainer.current })
+        //    console.log(myContainer.current, datepicker)
+      })
+
+      return (
+        <>
+          // note we are using the Content Delivery Network reference for Moment.js, you can also install moment seperately, or use a basic version from the /helpers directory
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossOrigin="anonymous"
+            referrerPolicy="no-referrer"
+          ></script>
+          <h1>Datepicker</h1>
+          <div ref={myContainer}></div>
+        </>
+      )
+    }
+
+    export default Datepicker
+  ```
+5. Adjust the options as necessary for your needs, be sure to supply the Datepicker options with the appropriate container HTML element node. *See usage section below*
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+1.) You will first need a recent version of Moment.js installed. 
+ - You can use the one included in the helpers folder of this project *  _*RECOMMENDED*_ *
+ -  or download the latest version from [their website](https://momentjs.com/).
+
+2.) Download and add the Datepicker.js and Datepicker.css files to their appropriate directories in your project.
+ - you will need to reference them in your project in a way that they are in scope to the code you are initializing the datepicker with.  
+
+3.) Below are all the options you can enable using Vanilla JS syntax. For implementation in React, see above [NPM](#Using-NPM) section
+```
+    // there should only be this one variable here
+    // to instantiate the class into the container element 
+    const testDatepicker = new Datepicker({
+        containerElement: document.querySelector('.DatepickerContainer'),
+        presetMenu: true,
+        singleDate: false,
+        autoClose: false,
+        timePicker: false,
+        leadingTrailingDates: true,
+        clearDates: true,
+        defaults: false,
+        // militaryTime: false,
+        // max: moment("08/14/2022"),
+        // min: new Date("08/14/2021"),
+        // defaults: [new Date('08/14/2023'),new Date('08/14/2023')],
+        menuOptions:
+        [
+          { title: 'Today',
+            values: [new Date(), new Date()]
+          }
+        ],
+        startDateLabel: "Reservation Start: ",
+        endDateLabel: "Reservation End: ",
+        // onChange: function () {
+        //     console.log("onChange:", this.dates);
+        // },
+        // onSubmit: function () {
+        //     console.log("onSubmit:", this.dates);
+        // },
+        // onClose: function () {
+        //     console.log("onClose:", this.dates);
+        // }
+    });
+```
+4.) Adjust the options above to meet the needs of your project, or the project's component you are implementing the datepicker in. 
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are **greatly appreciated** towards the final goal of a perfect datepicker!
+
+[Please visit this contribution guide for GitHub open source if you are unsure about any of these steps:](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+
+1. Fork the Project (top right there should be a button)
+2. Look through the [issues](https://github.com/ctrachte/Datepicker.js/issues), and choose one that is not in progress on the [project board](https://github.com/ctrachte/Datepicker.js/projects/1)
+3. Comment on the issue and I will assign it to you.
+4. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+5. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+6. Push to the Branch (`git push origin feature/AmazingFeature`)
+7. Please track your progress on the [project board](https://github.com/ctrachte/Datepicker.js/projects/1)
+8. Open a Pull Request 
+
+*Code will be reviewed before being merged. If your code does not quite work or needs revision it may not be merged to the master.*
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. 
+
+
+<!-- CONTACT -->
+## Contact
+
+Caleb Trachte - *contact info available for close friends and associates only.*
+
+Project Link: [https://github.com/ctrachte/Datepicker.js/projects/1](https://github.com/ctrachte/Datepicker.js/projects/1)
+
+## Donate!
+
+Want to fund the development of this project? Donate crypto!
+
+- Bitcoin: 3593eFRSHSVEAiwvEvpQnrodFpXPpwwrzx
+- Ethereum: 0x8c1EB41f646b4d7DCE0D3075F2A639E40bC894c3
+- Tezos: tz1fji2C1o21Xa6qQxC2hjsHNv7h89RnEkhq
+- Dai: 0xaAa1650a9f842F8A0EEa2FD8966BB2bc9144Ea35
+
+
+## Browser Support:
+![Chrome](https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/chrome.svg) | ![Firefox](https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/firefox.svg) | ![IE](https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/ie.svg) | ![Opera](https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/opera.svg) | ![Safari](https://github.com/alrra/browser-logos/blob/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/safari/safari_128x128.png) | ![Edge](https://github.com/alrra/browser-logos/blob/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/edge/edge_128x128.png) |
+--- | --- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | *Not supported* ❌ | *Not tested* |  Latest ✔ |   Latest ✔ |
