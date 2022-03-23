@@ -3,7 +3,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Dependencies](#dependencies)
+- [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
   - [Using Git, and Vanilla JS](#using-git-and-vanilla-js)
   - [Using NPM (React, Next.js)](#using-npm-react-nextjs)
@@ -32,7 +32,7 @@ Of course, no one datepicker will serve all projects since your needs may be dif
 
 I am the creator, and currently contribute and maintain this project almost entirely myself. I have reviewed and accepted some pull requests along the way however, and I am happy to review and merge any helpful PRs as soon as I find time. If you want to contribute checkout the [Contributing](#contributing) section!
 
-### Dependencies
+## Dependencies
 
 Since the goal of this project is to use only vanilla JavaScript and Moment.js, we have only one dependency:
 * [Moment.js](https://www.momentjs.com/)

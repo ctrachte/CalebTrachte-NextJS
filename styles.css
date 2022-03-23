@@ -167,16 +167,6 @@ body {
 .card-description > p {
   margin: 0;
 }
-
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   padding: 5rem 0;
   margin-bottom: 50px;
@@ -955,5 +945,5 @@ cursor: pointer;
 
 #about-container {
   z-index: -999;
-  margin: 240px 5px 5px 85px;
+  margin: 250px 5px 5px 90px;
 }
