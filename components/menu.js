@@ -13,6 +13,7 @@ import {
   faHandshake,
   faHandsHelping,
   faShoppingBag,
+  faMoneyBill,
 } from "@fortawesome/free-solid-svg-icons";
 
 class SideMenu extends React.Component {
@@ -72,6 +73,12 @@ class SideMenu extends React.Component {
             >
               Contributing
             </MenuItem>
+            <MenuItem
+              onClick={this.props.DonateScroll}
+              icon={<FontAwesomeIcon icon={faMoneyBill} />}
+            >
+              Donate!
+            </MenuItem>
             <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
               <MenuItem onClick={this.props.DatepickerScroll}>
                 Initialization
@@ -130,6 +137,7 @@ class SideMenu extends React.Component {
             >
               Sandbox Export
             </MenuItem>
+
           </Menu>
         </ProSidebar>
       </div>
