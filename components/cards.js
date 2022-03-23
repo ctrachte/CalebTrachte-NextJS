@@ -27,15 +27,13 @@ export default function Cards() {
         <a
           id="momentDatepickerImage"
           className="card-image"
-          href="https://www.npmjs.com/package/moment-datepicker-js"
-          target="_blank"
+          href="./Datepicker"
         >
           <img src="/npm-logo.png" alt="NPM Logo" />
         </a>
         <a
           className="card-description"
-          href="https://www.npmjs.com/package/moment-datepicker-js"
-          target="_blank"
+          href="./Datepicker"
         >
           <h2>Moment Datepicker</h2>
           <p>

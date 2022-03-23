@@ -74,7 +74,7 @@ const Datepicker = () => {
         DonateScroll={DonateScroll}
         BrowserSupportScroll={BrowserSupportScroll}
       />
-      <div className="parent-datepicker-container" ref={datepickerRef}>
+      <div id="sandbox-container"className="parent-datepicker-container" ref={datepickerRef}>
         <MomentDatepicker style={styles} />
       </div>
 

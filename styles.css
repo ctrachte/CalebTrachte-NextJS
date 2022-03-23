@@ -961,6 +961,10 @@ cursor: pointer;
   z-index: -999;
   margin: 250px 5px 5px 100px;
 }
+#sandbox-container {
+  z-index: -999;
+  margin: 250px 5px 250px 100px;
+}
 
 code {
   background-color: #eaeaea;
