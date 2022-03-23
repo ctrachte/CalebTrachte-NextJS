@@ -4,7 +4,7 @@ export default function About() {
       <h2 id="about-the-project">About The Project</h2>
       <p>
         <img
-          src="https://github.com/ctrachte/Datepicker.js/blob/65613f45108fb9f3d29162b277064d9ef489f54c/Datepicker_V1.0.0.gif"
+          src="./Datepicker_V1.0.0.gif"
           alt="DatepickerV1 0 0"
         />
       </p>

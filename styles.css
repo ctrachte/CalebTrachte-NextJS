@@ -292,6 +292,11 @@ h1, h2 {
   font-family: Liberation Mono, Monaco, Courier New, monospace;
   color: purple;
 }
+h3, h4 {
+  margin-bottom: 0px;
+  font-family: Liberation Mono, Monaco, Courier New, monospace;
+  color: #0e103dff;
+}
 
 /* styles for datepicker */
 :root {
@@ -946,4 +951,10 @@ cursor: pointer;
 #about-container {
   z-index: -999;
   margin: 250px 5px 5px 90px;
+}
+
+code {
+  background-color: #eaeaea;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
