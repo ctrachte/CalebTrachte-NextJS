@@ -10,6 +10,7 @@ import GettingStarted from "../components/docs/getting-started";
 import Contributing from "../components/docs/contributing";
 import Dependencies from "../components/docs/dependencies";
 import Donate from "../components/docs/donate";
+import BrowserSupport from "../components/docs/browser-support";
 
 const Datepicker = () => {
   const datepickerRef = useRef(null);
@@ -18,6 +19,7 @@ const Datepicker = () => {
   const gettingStartedRef = useRef(null);
   const contributingRef = useRef(null);
   const donateRef = useRef(null);
+  const browserSupportRef = useRef(null);
 
   const DatepickerScroll = () => datepickerRef.current.scrollIntoView();
   const AboutScroll = () => aboutRef.current.scrollIntoView();
@@ -25,6 +27,7 @@ const Datepicker = () => {
   const DependenciesScroll = () => dependenciesRef.current.scrollIntoView();
   const ContributingScroll = () => contributingRef.current.scrollIntoView();
   const DonateScroll = () => donateRef.current.scrollIntoView();
+  const BrowserSupportScroll = () => browserSupportRef.current.scrollIntoView();
 
   // run this function from an event handler or an effect to execute scroll
   return (
@@ -55,6 +58,9 @@ const Datepicker = () => {
         <div ref={contributingRef}>
           <Contributing />
         </div>
+        <div ref={browserSupportRef}>
+          <BrowserSupport />
+        </div>
         <div ref={donateRef}>
           <Donate />
         </div>
@@ -66,6 +72,7 @@ const Datepicker = () => {
         DependenciesScroll={DependenciesScroll}
         ContributingScroll={ContributingScroll}
         DonateScroll={DonateScroll}
+        BrowserSupportScroll={BrowserSupportScroll}
       />
       <div className="parent-datepicker-container" ref={datepickerRef}>
         <MomentDatepicker style={styles} />

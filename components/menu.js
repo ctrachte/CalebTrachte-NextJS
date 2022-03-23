@@ -14,6 +14,7 @@ import {
   faHandsHelping,
   faShoppingBag,
   faMoneyBill,
+  faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 class SideMenu extends React.Component {
@@ -78,6 +79,12 @@ class SideMenu extends React.Component {
               icon={<FontAwesomeIcon icon={faMoneyBill} />}
             >
               Donate!
+            </MenuItem>
+            <MenuItem
+              onClick={this.props.BrowserSupportScroll}
+              icon={<FontAwesomeIcon icon={faCheckCircle} />}
+            >
+              Browser Support
             </MenuItem>
             <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
               <MenuItem onClick={this.props.DatepickerScroll}>
