@@ -10,7 +10,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/chrome.svg"
+                  "https://raw.githubusercontent.com/jepso-ci/browser-logos/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/chrome.svg"
                 }
                 alt="Chrome"
                 layout="intrinsic"
@@ -21,7 +21,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/firefox.svg"
+                  "https://raw.githubusercontent.com/jepso-ci/browser-logos/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/firefox.svg"
                 }
                 alt="Firefox"
                 layout="intrinsic"
@@ -32,7 +32,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/ie.svg"
+                  "https://raw.githubusercontent.com/jepso-ci/browser-logos/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/ie.svg"
                 }
                 alt="IE"
                 layout="intrinsic"
@@ -43,7 +43,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/jepso-ci/browser-logos/blob/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/opera.svg"
+                  "https://raw.githubusercontent.com/jepso-ci/browser-logos/17f4f7fa25ec38901383fcd49312ca44843e55c5/images/opera.svg"
                 }
                 alt="Opera"
                 layout="intrinsic"
@@ -54,7 +54,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/alrra/browser-logos/blob/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/safari/safari_128x128.png"
+                  "https://raw.githubusercontent.com/alrra/browser-logos/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/safari/safari_128x128.png"
                 }
                 alt="Safari"
                 layout="intrinsic"
@@ -65,7 +65,7 @@ export default function BrowserSupport() {
             <th>
               <Image
                 src={
-                  "https://github.com/alrra/browser-logos/blob/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/edge/edge_128x128.png"
+                  "https://raw.githubusercontent.com/alrra/browser-logos/7bfef89b8bc38373d5d062db3aa36d2939e9ab2b/src/edge/edge_128x128.png"
                 }
                 alt="Edge"
                 layout="intrinsic"

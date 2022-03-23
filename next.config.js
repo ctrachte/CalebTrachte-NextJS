@@ -3,6 +3,6 @@ module.exports = {
     // You can still use webpack 4 while upgrading to the latest version of Next.js by adding the "webpack5: false" flag
     webpack5: true,
     images: {
-      domains: ['github.com'],
+      domains: ['github.com', "raw.githubusercontent.com"],
     },
   }
