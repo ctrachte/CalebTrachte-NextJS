@@ -30,6 +30,17 @@ const Datepicker = () => {
       <Header />
       <div id="about-container">
         <div ref={aboutRef}>
+          <h1
+            id="datepicker-title"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "50%",
+              textAlign:"center"
+            }}
+          >
+            Moment-Datepicker-JS
+          </h1>
           <About />
         </div>
         <div ref={dependenciesRef}>

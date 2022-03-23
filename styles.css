@@ -218,6 +218,7 @@ footer {
     width: 300px;
     padding: 10px;
   }
+
 }
 
 @media only screen and (max-width: 1436px) {
@@ -229,6 +230,8 @@ footer {
     color: #0e103dff;
     text-align: center;
   }
+  
+
   footer {
     z-index: 99999;
     bottom: 0;
@@ -265,6 +268,7 @@ footer {
   .card {
     width: 65%;
   }
+
 }
 
 .headerText {
@@ -538,6 +542,11 @@ li:active {
 @media only screen and (max-width: 750px) {
   .DatepickerContainer .launch {
     width: 360px !important;
+  }
+  #DatepickerGif, #datepicker-title {
+    margin-right:auto;
+    margin-left:auto;
+    width:100% !important;
   }
   .DatepickerContainer .grid-container {
     display: grid;
@@ -957,4 +966,10 @@ code {
   background-color: #eaeaea;
   margin-left: .5rem;
   margin-right: .5rem;
+}
+
+#DatepickerGif {
+  margin-right:auto;
+  margin-left:auto;
+  width:50%;
 }

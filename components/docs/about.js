@@ -1,13 +1,23 @@
+import Image from "next/image";
+import mypic from "./Datepicker_V1.0.0.gif";
+
 export default function About() {
   return (
     <div>
-      <h2 id="about-the-project">About The Project</h2>
-      <p>
-        <img
-          src="./Datepicker_V1.0.0.gif"
-          alt="DatepickerV1 0 0"
+      <div id="DatepickerGif"
+        style={{
+
+
+        }}
+      >
+        <Image
+          src={mypic}
+          alt="Datepicker.js Demonstration gif"
+          layout="intrinsic"
+          objectPosition={"center center"}
         />
-      </p>
+      </div>
+      <h2 id="about-the-project">About The Project</h2>
       <p>
         There are many great datepickers available on GitHub, however, I
         didn&#39;t find one that really suited my needs. The hardest thing to
