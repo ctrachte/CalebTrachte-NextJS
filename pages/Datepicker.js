@@ -15,11 +15,13 @@ const Datepicker = () => {
   const aboutRef = useRef(null);
   const dependenciesRef = useRef(null);
   const gettingStartedRef = useRef(null);
+  const contributingRef = useRef(null);
 
   const DatepickerScroll = () => datepickerRef.current.scrollIntoView();
   const AboutScroll = () => aboutRef.current.scrollIntoView();
   const GettingStartedScroll = () => gettingStartedRef.current.scrollIntoView();
   const DependenciesScroll = () => dependenciesRef.current.scrollIntoView();
+  const ContributingScroll = () => contributingRef.current.scrollIntoView();
 
   // run this function from an event handler or an effect to execute scroll
   return (
@@ -36,12 +38,16 @@ const Datepicker = () => {
         <div ref={gettingStartedRef}>
           <GettingStarted />
         </div>
+        <div ref={contributingRef}>
+          <Contributing />
+        </div>
       </div>
       <SideMenu
         DatepickerScroll={DatepickerScroll}
         AboutScroll={AboutScroll}
         GettingStartedScroll={GettingStartedScroll}
         DependenciesScroll={DependenciesScroll}
+        ContributingScroll={ContributingScroll}
       />
       <div className="parent-datepicker-container" ref={datepickerRef}>
         <MomentDatepicker style={styles} />

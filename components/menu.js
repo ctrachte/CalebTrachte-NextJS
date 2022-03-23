@@ -11,6 +11,8 @@ import {
   faHandHolding,
   faQuestionCircle,
   faHandshake,
+  faHandsHelping,
+  faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 
 class SideMenu extends React.Component {
@@ -54,7 +56,7 @@ class SideMenu extends React.Component {
             </MenuItem>
             <MenuItem
               onClick={this.props.DependenciesScroll}
-              icon={<FontAwesomeIcon icon={faHandshake} />}
+              icon={<FontAwesomeIcon icon={faShoppingBag} />}
             >
               Dependencies
             </MenuItem>
@@ -63,6 +65,12 @@ class SideMenu extends React.Component {
               icon={<FontAwesomeIcon icon={faPlug} />}
             >
               Getting Started
+            </MenuItem>
+            <MenuItem
+              onClick={this.props.ContributingScroll}
+              icon={<FontAwesomeIcon icon={faHandsHelping} />}
+            >
+              Contributing
             </MenuItem>
             <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
               <MenuItem onClick={this.props.DatepickerScroll}>
