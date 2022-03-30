@@ -101,39 +101,39 @@ npm i --save moment-datepicker-js
 
 3.) Below are all the options you can enable using Vanilla JS syntax. For implementation in React, see above [NPM](#Using-NPM) section
 ```
-    // there should only be this one variable here
-    // to instantiate the class into the container element 
-    const testDatepicker = new Datepicker({
-        containerElement: document.querySelector('.DatepickerContainer'),
-        presetMenu: true,
-        singleDate: false,
-        autoClose: false,
-        timePicker: false,
-        leadingTrailingDates: true,
-        clearDates: true,
-        defaults: false,
-        // militaryTime: false,
-        // max: moment("08/14/2022"),
-        // min: new Date("08/14/2021"),
-        // defaults: [new Date('08/14/2023'),new Date('08/14/2023')],
-        menuOptions:
-        [
-          { title: 'Today',
-            values: [new Date(), new Date()]
-          }
-        ],
-        startDateLabel: "Reservation Start: ",
-        endDateLabel: "Reservation End: ",
-        // onChange: function () {
-        //     console.log("onChange:", this.dates);
-        // },
-        // onSubmit: function () {
-        //     console.log("onSubmit:", this.dates);
-        // },
-        // onClose: function () {
-        //     console.log("onClose:", this.dates);
-        // }
-    });
+// there should only be this one variable here
+// to instantiate the class into the container element 
+const testDatepicker = new Datepicker({
+    containerElement: document.querySelector('.DatepickerContainer'),
+    presetMenu: true,
+    singleDate: false,
+    autoClose: false,
+    timePicker: false,
+    leadingTrailingDates: true,
+    clearDates: true,
+    defaults: false,
+    // militaryTime: false,
+    // max: moment("08/14/2022"),
+    // min: new Date("08/14/2021"),
+    // defaults: [new Date('08/14/2023'),new Date('08/14/2023')],
+    menuOptions:
+    [
+      { title: 'Today',
+        values: [new Date(), new Date()]
+      }
+    ],
+    startDateLabel: "Reservation Start: ",
+    endDateLabel: "Reservation End: ",
+    // onChange: function () {
+    //     console.log("onChange:", this.dates);
+    // },
+    // onSubmit: function () {
+    //     console.log("onSubmit:", this.dates);
+    // },
+    // onClose: function () {
+    //     console.log("onClose:", this.dates);
+    // }
+});
 ```
 4.) Adjust the options above to meet the needs of your project, or the project's component you are implementing the datepicker in. 
 

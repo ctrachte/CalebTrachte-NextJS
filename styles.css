@@ -1,11 +1,13 @@
-/* CSS HEX 
-
+/* {CSS HEX  */
+:root{
 --pink-lace: #f2d7eeff;
 --silver-pink: #d3bcc0ff;
 --antique-fuchsia: #a5668bff;
 --palatinate-purple: #69306dff;
 --russian-violet: #0e103dff;
-*/
+}
+
+
 
 html,
 body {
@@ -968,8 +970,8 @@ cursor: pointer;
 
 code {
   background-color: #eaeaea;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  width: 100px;
+
 }
 
 #DatepickerGif {
@@ -980,4 +982,12 @@ code {
 table, th, td {
   border: 1px solid black;
   text-align: center;
+}
+pre {
+  font-size: 87.5%;
+  font-weight: bolder;
+  color: var(--russian-violet);
+  background-color: #eaeaea;
+  padding: 1rem;
+  margin: 10px;
 }
