@@ -1,13 +1,11 @@
 /* {CSS HEX  */
-:root{
---pink-lace: #f2d7eeff;
---silver-pink: #d3bcc0ff;
---antique-fuchsia: #a5668bff;
---palatinate-purple: #69306dff;
---russian-violet: #0e103dff;
+:root {
+  --pink-lace: #f2d7eeff;
+  --silver-pink: #d3bcc0ff;
+  --antique-fuchsia: #a5668bff;
+  --palatinate-purple: #69306dff;
+  --russian-violet: #0e103dff;
 }
-
-
 
 html,
 body {
@@ -220,7 +218,6 @@ footer {
     width: 300px;
     padding: 10px;
   }
-
 }
 
 @media only screen and (max-width: 1436px) {
@@ -232,7 +229,6 @@ footer {
     color: #0e103dff;
     text-align: center;
   }
-  
 
   footer {
     z-index: 99999;
@@ -270,7 +266,6 @@ footer {
   .card {
     width: 65%;
   }
-
 }
 
 .headerText {
@@ -293,12 +288,14 @@ header {
   z-index: 9999;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 0px;
   font-family: Liberation Mono, Monaco, Courier New, monospace;
   color: purple;
 }
-h3, h4 {
+h3,
+h4 {
   margin-bottom: 0px;
   font-family: Liberation Mono, Monaco, Courier New, monospace;
   color: #0e103dff;
@@ -545,10 +542,11 @@ li:active {
   .DatepickerContainer .launch {
     width: 360px !important;
   }
-  #DatepickerGif, #datepicker-title {
-    margin-right:auto;
-    margin-left:auto;
-    width:100% !important;
+  #DatepickerGif,
+  #datepicker-title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100% !important;
   }
   .DatepickerContainer .grid-container {
     display: grid;
@@ -971,23 +969,38 @@ cursor: pointer;
 code {
   background-color: #eaeaea;
   width: 100px;
-
 }
 
 #DatepickerGif {
-  margin-right:auto;
-  margin-left:auto;
-  width:50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
 }
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   text-align: center;
 }
 pre {
-  font-size: 87.5%;
   font-weight: bolder;
   color: var(--russian-violet);
   background-color: #eaeaea;
   padding: 1rem;
   margin: 10px;
+}
+table {
+  border: 1px solid black;
+}
+th,
+td {
+  border: 1px solid black;
+}
+.exampleImplementation {
+  text-align: start;
+}
+.scrollable {
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
 }

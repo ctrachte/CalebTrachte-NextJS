@@ -122,14 +122,26 @@ class SideMenu extends React.Component {
               </MenuItem>
             </SubMenu>
             <SubMenu title="Methods" icon={<FontAwesomeIcon icon={faCode} />}>
-              <MenuItem onClick={this.props.DatepickerScroll}>
+              <MenuItem onClick={this.props.valueScroll}>
                 .value()
               </MenuItem>
-              <MenuItem onClick={this.props.DatepickerScroll}>
+              <MenuItem onClick={this.props.valueScroll}>
+                .startDate()
+              </MenuItem>
+              <MenuItem onClick={this.props.valueScroll}>
+                .endDate()
+              </MenuItem>
+              <MenuItem onClick={this.props.valueScroll}>
+                .closeCalendar()
+              </MenuItem>
+              <MenuItem onClick={this.props.valueScroll}>
                 .openCalendar()
               </MenuItem>
-              <MenuItem onClick={this.props.DatepickerScroll}>
-                .closeCalendar()
+              <MenuItem onClick={this.props.valueScroll}>
+                .resetCalendar()
+              </MenuItem>
+              <MenuItem onClick={this.props.valueScroll}>
+                .snapTo()
               </MenuItem>
             </SubMenu>
             <MenuItem

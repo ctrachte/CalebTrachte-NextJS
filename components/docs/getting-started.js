@@ -105,9 +105,11 @@ export default function GettingStarted() {
 <li>you will need to reference them in your project in a way that they are in scope to the code you are initializing the datepicker with.  </li>
 </ul>
 <p>3.) Below are all the options you can enable using Vanilla JS syntax. For implementation in React, see above <a href="#Using-NPM">NPM</a> section</p>
+<div className={"exampleImplementation"}> 
 <Markdown options={{ wrapper: 'pre', forceWrapper: true }}>
 {codeBlock}
 </Markdown>
+</div>
 <p>4.) Adjust the options above to meet the needs of your project, or the project&#39;s component you are implementing the datepicker in. </p>
 
     </div>
