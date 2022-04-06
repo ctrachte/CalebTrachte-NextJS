@@ -1,5 +1,4 @@
 import Image from "next/image";
-import mypic from "./Datepicker_V1.0.0.gif";
 
 export default function About() {
   return (
@@ -11,7 +10,7 @@ export default function About() {
         }}
       >
         <Image
-          src={mypic}
+          src={"/Datepicker_V1.0.0.gif"}
           alt="Datepicker.js Demonstration gif"
           layout="intrinsic"
           objectPosition={"center center"}
