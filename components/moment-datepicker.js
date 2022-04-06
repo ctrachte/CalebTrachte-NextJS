@@ -64,6 +64,7 @@ const Datepicker = () => {
         referrerPolicy="no-referrer"
       ></script>
       <h2 className="datepicker-heading">Datepicker Sandbox</h2>
+
       <Form updateDatepicker={initDatepicker} containerElement={myContainer.current}></Form>
       <div className="datpicker-container" ref={myContainer}></div>
     </>

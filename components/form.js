@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 class form extends React.Component {
   constructor(props) {
@@ -98,7 +98,6 @@ class form extends React.Component {
     return (
       <form onSubmit={this.handleSubmit} className="form">
         <p>
-          {" "}
           Choose options to configure the moment-datepicker with, and click
           submit to configure.
         </p>

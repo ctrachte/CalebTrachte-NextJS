@@ -85,6 +85,61 @@ body {
   top: 0;
 }
 
+.form {
+  position : relative;
+  border: #69306dff;
+  margin: 1em;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.form > h3 {
+  font : 1em "typewriter", monospace;
+  align-self : end;
+}
+.form {
+  font : 1em "typewriter", monospace;
+}
+
+.form label {
+  display: block;
+}
+.form > .submit {
+  padding      : 5px;
+  font         : bold 1em monospace;
+  width: 100%;
+  border       : 2px solid #0e103dff;
+  border-radius: 5px;
+  background   : none;
+  cursor       : pointer;
+}
+.form.submit:after {
+  content      : " >>>";
+}
+.form input:focus, .form  textarea:focus {
+  background   : #d3bcc0ff;
+  border-radius: 5px;
+}
+.form input, .form textarea {
+  font    : 1.4em/1.5em sans-serif;
+  border-radius: 5px;
+  border: solid #d3bcc0ff;
+  margin  : 10px;
+  padding: 10px;
+  background : none;
+}
+.formText {
+  display: block;
+}
+.form .submit:hover,
+.form .submit:focus {
+  outline     : none;
+  background  : #0e103dff;
+  color       : #FFF;
+}
+.datepicker-heading {
+  margin-top: 270px;
+}
+
 .card-image {
   display: block;
   background: #fff center center no-repeat;
@@ -95,6 +150,26 @@ body {
   display: block;
   width: 100%;
   opacity: 0; /* visually hide the img element */
+}
+
+.form .colorPicker > input {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+
+.form .colorPicker {
+  padding:5px;
+  display:block;
+  height: 60px;
+}
+.form .colorPicker * {
+ vertical-align:middle;
+ justify-content: center;
+ line-height: 60px;
 }
 
 #sunfireImage {
@@ -346,7 +421,9 @@ h4 {
 }
 
 .DatepickerContainer {
-  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
