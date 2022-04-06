@@ -89,25 +89,19 @@ class SideMenu extends React.Component {
             </MenuItem>
             <SubMenu title="Options" icon={<FontAwesomeIcon icon={faList} />}>
               <MenuItem onClick={this.props.DatepickerScroll}>
-                Initialization
-              </MenuItem>
-              <MenuItem onClick={this.props.DatepickerScroll}>
                 singleDate
               </MenuItem>
               <MenuItem onClick={this.props.DatepickerScroll}>
-                presetMenu{" "}
+                presetMenu
               </MenuItem>
               <MenuItem onClick={this.props.DatepickerScroll}>
-                militaryTime{" "}
+                militaryTime
               </MenuItem>
               <MenuItem onClick={this.props.DatepickerScroll}>
                 autoClose
               </MenuItem>
               <MenuItem onClick={this.props.DatepickerScroll}>
                 leadingTrailingDates
-              </MenuItem>
-              <MenuItem onClick={this.props.DatepickerScroll}>
-                clearDates
               </MenuItem>
               <MenuItem onClick={this.props.DatepickerScroll}>
                 clearDates

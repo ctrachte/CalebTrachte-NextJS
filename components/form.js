@@ -110,7 +110,7 @@ class form extends React.Component {
             value={this.state.singleDate}
             onChange={this.handleSingleDateChange}
           />
-          <span> singleDate </span>
+          <span> singleDate - <code>true</code> if you want the datepicker to pick only one date.</span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -119,7 +119,7 @@ class form extends React.Component {
             value={this.state.presetMenu}
             onChange={this.handlePresetMenuChange}
           />
-          <span> presetMenu </span>
+          <span> presetMenu - <code>true</code> if you want to allow a hamburger menu of preset dates or date ranges.</span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -128,7 +128,7 @@ class form extends React.Component {
             checked={this.state.autoClose}
             onChange={this.handleAutoCloseChange}
           />
-          <span> autoClose </span>
+          <span> autoClose - <code>true</code> if you want the datepicker to close after selections are made. </span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -137,7 +137,7 @@ class form extends React.Component {
             checked={this.state.militaryTime}
             onChange={this.handleMilitaryTimeChange}
           />
-          <span> militaryTime </span>
+          <span> militaryTime - <code>true</code> if you want the datepicker to display 24hr time - <code>HH:MM</code>.</span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -146,7 +146,7 @@ class form extends React.Component {
             checked={this.state.timePicker}
             onChange={this.handleTimePickerChange}
           />
-          <span> timePicker</span>
+          <span> timePicker - <code>true</code> if you want to allow users to also choose a time range.</span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -155,7 +155,7 @@ class form extends React.Component {
             checked={this.state.leadingTrailingDates}
             onChange={this.handleleadingTrailingDates}
           />
-          <span> leadingTrailingDates</span>
+          <span> leadingTrailingDates - <code>true</code> if you want to show next/previous months dates on the first/last week of the current month.</span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -164,7 +164,7 @@ class form extends React.Component {
             checked={this.state.clearDates}
             onChange={this.handleclearDatesChange}
           />
-          <span> clearDates </span>
+          <span> clearDates - <code>true</code> if you want the "X" button to reset the calendar dates instead of close the calendar UI. </span>
         </label>
         <label style={{ display: "block" }}>
           <input
@@ -173,7 +173,7 @@ class form extends React.Component {
             checked={this.state.defaults}
             onChange={this.handleDefaultsChange}
           />
-          <span> defaults </span>
+          <span> defaults  - <code>true</code> if you want to prefill Date(s) if none chosen.</span>
         </label>
         <hr />
         <label>
