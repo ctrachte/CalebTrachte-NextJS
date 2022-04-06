@@ -214,6 +214,7 @@ footer {
     position: fixed !important;
     height:80px !important;
     width: 80px !important;
+    padding-left: 0px !important;
   }
   header img{
     height: 80px !important;
@@ -307,6 +308,7 @@ header {
   justify-content: left;
   align-items: left;
   z-index: 9999;
+  padding-left:80px;
 }
 
 h1,
@@ -335,8 +337,9 @@ h4 {
 .SideMenuContainer {
   position: fixed;
   left: 0;
-  top: 240px;
+  top: 0px;
   height: 100%;
+  z-index: 999999;
 }
 .parent-datepicker-container {
   margin: 20px 5px 100px 85px;
