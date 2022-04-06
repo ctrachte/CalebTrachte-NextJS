@@ -292,6 +292,9 @@ footer {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
   color: #0e103dff;
+  width: 30%; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
