@@ -3,18 +3,8 @@ import Image from "next/image";
 export default function About() {
   return (
     <div>
-      <div id="DatepickerGif"
-        style={{
-
-
-        }}
-      >
-        <Image
-          src={"/Datepicker_V1.0.0.gif"}
-          alt="Datepicker.js Demonstration gif"
-          layout="intrinsic"
-          objectPosition={"center center"}
-        />
+      <div id="DatepickerGif">
+        <img src="/Datepicker_V1.0.0.gif" alt="Airbnb Logo" />
       </div>
       <h2 id="about-the-project">About The Project</h2>
       <p>
