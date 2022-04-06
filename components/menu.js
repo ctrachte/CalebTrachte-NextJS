@@ -145,12 +145,12 @@ class SideMenu extends React.Component {
             >
               Datepicker Sandbox
             </MenuItem>
-            <MenuItem
+            {/* <MenuItem
               onClick={this.props.DatepickerScroll}
               icon={<FontAwesomeIcon icon={faFileExport} />}
             >
               Sandbox Export
-            </MenuItem>
+            </MenuItem> */}
 
           </Menu>
         </ProSidebar>
