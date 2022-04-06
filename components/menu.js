@@ -28,6 +28,7 @@ class SideMenu extends React.Component {
     this.Open = this.Open.bind(this);
     this.hoverMenu = this.hoverMenu.bind(this);
     this.Close = this.Close.bind(this);
+    this.breakPoint = "md"
   }
 
   hoverMenu(event) {

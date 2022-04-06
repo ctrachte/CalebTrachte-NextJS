@@ -202,6 +202,34 @@ footer {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+@media (max-width: 768px) {
+  footer {
+    height: 1rem;
+  }
+  footer p{
+    font-size: 8px !important;
+    font-weight: bolder;
+  }
+  header {
+    position: fixed !important;
+    height:80px !important;
+    width: 80px !important;
+  }
+  header img{
+    height: 80px !important;
+  }
+  .card-list {
+    margin-top: 0px !important;
+  }
+  .SideMenuContainer {
+    position: fixed;
+    left: 0;
+    top: 80px !important;
+  }
+  #about-container {
+    margin-top: 0px !important;
+  }
+}
 @media only screen and (min-width: 1436px) {
   .card-list {
     max-width: 1200px;
@@ -230,18 +258,8 @@ footer {
     text-align: center;
   }
 
-  footer {
-    z-index: 99999;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    margin: 0 auto;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
   header {
     top: 0;
     width: 100%;
@@ -315,6 +333,7 @@ h4 {
   position: fixed;
   left: 0;
   top: 240px;
+  height: 100%;
 }
 .parent-datepicker-container {
   margin: 20px 5px 100px 85px;
@@ -988,6 +1007,7 @@ pre {
   background-color: #eaeaea;
   padding: 1rem;
   margin: 10px;
+  width:fit-content;
 }
 table {
   border: 1px solid black;
