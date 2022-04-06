@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Header/>
       <main>
-        <Cards />
+        <Cards/>
       </main>
 
       <Footer />

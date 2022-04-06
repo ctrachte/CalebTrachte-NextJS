@@ -16,7 +16,7 @@ export default function Header() {
         <p className="headerText">
           PC and Video Game Nerd, Software Developer, Creator of Craft Hot
           Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married,
-          Reformed 1689. Learn more about me:
+          Reformed 1689.
         </p>
       </div>
       <styles />
