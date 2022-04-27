@@ -5,7 +5,7 @@ import MomentDatepicker from "../components/moment-datepicker";
 import styles from "../components/moment-datepicker.module.css";
 import SideMenu from "../components/menu";
 import React, { useEffect, useRef, useState, createRef } from "react";
-import About from "../components/docs/about";
+import About from "../components/about";
 import GettingStarted from "../components/docs/getting-started";
 import Contributing from "../components/docs/contributing";
 import Dependencies from "../components/docs/dependencies";
