@@ -4,7 +4,13 @@ export default function About() {
   return (
     <div>
       <div id="DatepickerGif">
-        <img src="/Datepicker_V1.0.0.gif" alt="Airbnb Logo" />
+        <Image
+          src="/Datepicker_V1.0.0.gif"
+          alt="Datepicker GIF"
+          width={1000}
+          height={1000}
+          layout="intrinsic"
+        />
       </div>
       <h2 id="about-the-project">About The Project</h2>
       <p>

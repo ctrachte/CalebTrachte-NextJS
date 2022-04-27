@@ -382,7 +382,7 @@ header {
   background-color: #d3bcc0ff;
   justify-content: left;
   align-items: left;
-  z-index: 9999;
+  z-index: 99;
   padding-left:80px;
 }
 
@@ -414,7 +414,7 @@ h4 {
   left: 0;
   top: 0px;
   height: 100%;
-  z-index: 999999;
+  z-index: 101;
 }
 .parent-datepicker-container {
   margin: 20px 5px 100px 85px;
@@ -638,17 +638,16 @@ li:active {
   box-shadow: 0 4px 8px 0 var(--Shadow), 0 6px 20px 0 var(--Shadow);
   border-radius: 5px;
 }
-
+#submitOptions {
+  width:156px;
+}
 /* media queries for responsive placement of calendar */
 @media only screen and (max-width: 750px) {
   .DatepickerContainer .launch {
     width: 360px !important;
   }
-  #DatepickerGif,
-  #datepicker-title {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100% !important;
+  #submitOptions {
+    width:100%;
   }
   .DatepickerContainer .grid-container {
     display: grid;
@@ -1073,11 +1072,12 @@ code {
   width: 100px;
 }
 
-#DatepickerGif {
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
+#DatepickerGif:first-child {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
 }
+
 table,
 th,
 td {
