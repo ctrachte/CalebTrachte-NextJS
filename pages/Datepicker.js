@@ -44,7 +44,6 @@ const Datepicker = () => {
             style={{
               marginLeft: "auto",
               marginRight: "auto",
-              width: "50%",
               textAlign:"center"
             }}
           >

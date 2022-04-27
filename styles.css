@@ -646,10 +646,10 @@ li:active {
   }
   #DatepickerGif,
   #datepicker-title {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100% !important;
+    display: "flex" !important;
+    justify-content: "center" !important;
   }
+
   .DatepickerContainer .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -1073,11 +1073,11 @@ code {
   width: 100px;
 }
 
-#DatepickerGif {
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
+#DatepickerGif:first-child {
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
 table,
 th,
 td {
