@@ -382,7 +382,7 @@ header {
   background-color: #d3bcc0ff;
   justify-content: left;
   align-items: left;
-  z-index: 9999;
+  z-index: 99;
   padding-left:80px;
 }
 
@@ -414,7 +414,7 @@ h4 {
   left: 0;
   top: 0px;
   height: 100%;
-  z-index: 999999;
+  z-index: 101;
 }
 .parent-datepicker-container {
   margin: 20px 5px 100px 85px;
