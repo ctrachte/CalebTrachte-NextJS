@@ -638,18 +638,17 @@ li:active {
   box-shadow: 0 4px 8px 0 var(--Shadow), 0 6px 20px 0 var(--Shadow);
   border-radius: 5px;
 }
-
+#submitOptions {
+  width:156px;
+}
 /* media queries for responsive placement of calendar */
 @media only screen and (max-width: 750px) {
   .DatepickerContainer .launch {
     width: 360px !important;
   }
-  #DatepickerGif,
-  #datepicker-title {
-    display: "flex" !important;
-    justify-content: "center" !important;
+  #submitOptions {
+    width:100%;
   }
-
   .DatepickerContainer .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;

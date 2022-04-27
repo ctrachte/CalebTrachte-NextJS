@@ -243,7 +243,7 @@ class form extends React.Component {
           />
         </label>
         <hr />
-        <input className="submit" type="submit" />
+        <input id="submitOptions" className="submit" type="submit" />
       </form>
     );
   }
