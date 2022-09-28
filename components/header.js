@@ -5,19 +5,14 @@ export default function Header() {
     <header id="header">
       <a id="logo" href="/">
         <Image
-          src="/logo.jpg"
+          src="/logo-removebg-preview.png"
           alt="Caleb Trachte Logo"
-          width={240}
-          height={240}
+          width={500}
+          height={500}
           className="headerLogo"
         />{' '}
       </a>
       <div className="headerTextContainer">
-        <p className="headerText">
-          PC and Video Game Nerd, Software Developer, Creator of Craft Hot
-          Sauce, Platinum League of Legends Support, Airbnb SuperHost, Married,
-          Reformed 1689.
-        </p>
       </div>
       <styles />
     </header>

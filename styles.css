@@ -202,7 +202,7 @@ body {
   font-size: 0;
   text-align: center;
   list-style: none;
-  margin-top: 300px;
+  margin-top: 600px;
   z-index: 999;
   margin-bottom: 100px;
 }
@@ -243,7 +243,6 @@ body {
   margin: 0;
 }
 main {
-  padding: 5rem 0;
   margin-bottom: 50px;
   flex: 1;
   display: flex;
@@ -260,21 +259,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 footer {
-  position: fixed;
-  background-color: #d3bcc0ff;
+  position: absolute;
+  background-color: transparent;
   z-index: 99999;
-  bottom: 0;
   width: 100%;
-  height: 25px;
-  border-top: 1px solid #eaeaea;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Courier New, monospace;
 }
 
 @media (max-width: 768px) {
@@ -286,30 +283,21 @@ footer {
     font-weight: bolder;
   }
   header {
-    position: fixed !important;
-    height:80px !important;
-    width: 80px !important;
-    padding-left: 0px !important;
-  }
-  header img{
-    height: 80px !important;
+    position: absolute !important;
+    top:0px !important;
+    left: 20px !important;
   }
   .card-list {
-    margin-top: 0px !important;
-  }
-  .SideMenuContainer {
-    position: fixed;
-    left: 0;
-    top: 80px !important;
+    margin-top: 400px !important;
   }
   #about-container {
-    margin-top: 0px !important;
+    margin-top: 400px !important;
   }
 }
 @media only screen and (min-width: 1436px) {
   .card-list {
-    max-width: 1200px;
-    margin-top: 300px;
+    max-width: 90%;
+    margin-top: 600px;
   }
   .right {
     position: absolute;
@@ -333,24 +321,23 @@ footer {
     color: #0e103dff;
     text-align: center;
   }
-
-
-
   header {
-    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:10px;
+    padding-top: 0px;
     width: 100%;
-    height: 240px;
-    text-align: center;
     display: flex;
-    background-color: #d3bcc0ff;
     justify-content: left;
     align-items: left;
-    z-index: 9999;
+    z-index: 99;
   }
   .card-list {
     display: block;
     padding: 0;
-    margin-top: 300px;
+    margin-top: 600px;
     font-size: 0;
     text-align: center;
     list-style: none;
@@ -363,27 +350,28 @@ footer {
 }
 
 .headerText {
-  position: absolute;
-  top: 50%;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width:100%;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
   color: #0e103dff;
-  width: 30%; 
   margin-left: auto;
   margin-right: auto;
 }
 
 header {
   position: absolute;
-  top: 0;
+  left: 0;
+  right: 0;
+  top:10px;
+  margin: auto;
   width: 100%;
-  height: 240px;
   display: flex;
-  background-color: #d3bcc0ff;
-  justify-content: left;
-  align-items: left;
-  z-index: 99;
-  padding-left:80px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
 }
 
 h1,
@@ -411,7 +399,7 @@ h4 {
 
 .SideMenuContainer {
   position: fixed;
-  left: 0;
+  left: 0px;
   top: 0px;
   height: 100%;
   z-index: 101;
@@ -1060,7 +1048,7 @@ cursor: pointer;
 
 #about-container {
   z-index: -999;
-  margin: 250px 5px 5px 100px;
+  margin: 600px 5px 5px 100px;
 }
 #sandbox-container {
   z-index: -999;

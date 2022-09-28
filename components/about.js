@@ -1,7 +1,8 @@
 import Image from "next/image";
 export default function About() {
+
   return (
-    <div>
+    <div >
       <div id="DatepickerGif">
         <Image
           src="/Datepicker_V1.0.0.gif"

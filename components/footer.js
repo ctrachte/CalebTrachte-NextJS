@@ -1,8 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <p>&copy; 2021 Caleb Trachte, powered by NextJS and Vercel.</p>
-      <styles />
+      <div>&copy; 2022 Caleb Trachte - <small>Powered by NextJS and Vercel</small></div>
     </footer>
   )
 }
