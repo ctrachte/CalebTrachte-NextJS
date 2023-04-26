@@ -1,0 +1,81 @@
+{
+    "Apps": [
+        {
+            "AppID": 1,
+            "AppTitle": "icons",
+            "Description": "Icon Package",
+            "Icon": "pfi-icons",
+            "AppMenuAltTitle": "Icons",
+            "AppHeader": "Icons",
+            "AppFooter": null,
+            "URL": null,
+            "OpenNewTab": null,
+            "ClassFile": "/windows/icons.js",
+            "ClassName": "icons",
+            "Roles": "admin",
+            "KeyWords": []
+          },
+          {
+            "AppID": 2,
+            "AppTitle": "App Management",
+            "Description": "Create, Update, Archive Apps",
+            "Icon": "pfi-windoz",
+            "AppMenuAltTitle": "App Management",
+            "AppHeader": "App Management",
+            "AppFooter": null,
+            "URL": null,
+            "OpenNewTab": null,
+            "ClassFile": "/windows/AppMgmt.js",
+            "ClassName": "AppMgmt",
+            "Roles": "admin",
+            "KeyWords": []
+          },
+          {
+            "AppID": 3,
+            "AppTitle": "Settings",
+            "Description": "Update Kitchen Windows Settings",
+            "Icon": "pfi-gear",
+            "AppMenuAltTitle": "Settings",
+            "AppHeader": "Settings",
+            "AppFooter": null,
+            "URL": null,
+            "OpenNewTab": null,
+            "ClassFile": "/windows/Settings.js",
+            "ClassName": "Settings",
+            "Roles": "admin",
+            "KeyWords": []
+          }
+    ],
+    "Collection": [
+        {
+            "AppID": 1,
+            "AppTitle": "icons",
+            "Description": "Icon Package",
+            "Icon": "pfi-icons",
+            "AppMenuAltTitle": "Icons",
+            "AppHeader": "Icons",
+            "AppFooter": null,
+            "URL": null,
+            "OpenNewTab": null,
+            "ClassFile": "/windows/icons.js",
+            "ClassName": "icons",
+            "Roles": "admin",
+            "KeyWords": []
+          },
+          {
+            "AppID": 3,
+            "AppTitle": "Settings",
+            "Description": "Update Kitchen Windows Settings",
+            "Icon": "pfi-gear",
+            "AppMenuAltTitle": "Settings",
+            "AppHeader": "Settings",
+            "AppFooter": null,
+            "URL": null,
+            "OpenNewTab": null,
+            "ClassFile": "/windows/Settings.js",
+            "ClassName": "Settings",
+            "Roles": "admin",
+            "KeyWords": []
+          }
+    ]
+}

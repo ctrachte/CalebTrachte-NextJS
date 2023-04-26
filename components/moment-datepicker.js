@@ -28,13 +28,10 @@ const Datepicker = () => {
       startDateLabel: "Reservation Start: ",
       endDateLabel: "Reservation End: ",
       onChange: function () {
-          console.log("onChange:", this.dates);
       },
       onSubmit: function () {
-          console.log("onSubmit:", this.dates);
       },
       onClose: function () {
-          console.log("onClose:", this.dates);
       }
     }
     //initialize datepicker with options
@@ -66,7 +63,7 @@ const Datepicker = () => {
       <h2 className="datepicker-heading">Datepicker Sandbox</h2>
 
       <Form updateDatepicker={initDatepicker} containerElement={myContainer.current}></Form>
-      <div className="datpicker-container" ref={myContainer}></div>
+      <div className="datpicker-container"ref={myContainer}></div>
     </>
   )
 }
