@@ -941,7 +941,7 @@ class DraggableWindows
       {
         if (context.logo && !context.backgroundImage)
         {
-          context.background.style.display = "block";
+          context.background.style.display = "none";
         }
         context.background.style.position = "fixed";
         context.background.style.opacity = this.darkMode
