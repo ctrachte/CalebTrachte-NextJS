@@ -2,7 +2,7 @@ import Footer from '../components/footer'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 
-function Sunfire() {
+const Sunfire = () => {
   return (
     <div className="container">
       <Head></Head>

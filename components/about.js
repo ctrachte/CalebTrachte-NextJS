@@ -1,6 +1,5 @@
 import Image from "next/image";
-export default function About() {
-
+const About = () => {
   return (
     <div >
       <div id="DatepickerGif">
@@ -10,6 +9,7 @@ export default function About() {
           width={1000}
           height={1000}
           layout="intrinsic"
+          unoptimized="true"
         />
       </div>
       <h2 id="about-the-project">About The Project</h2>
@@ -42,3 +42,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;
