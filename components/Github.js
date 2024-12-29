@@ -3,7 +3,7 @@ import Header from './header'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 
-function Github({ profile, pinned }) {
+const Github = ({ profile, pinned }) => {
   return (
     <div>
       <Head></Head>

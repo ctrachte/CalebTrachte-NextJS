@@ -1,4 +1,4 @@
-export default function Cards() {
+const Cards = () => {
   return (
     <ul className="card-list">
       <li className="card">
@@ -17,8 +17,8 @@ export default function Cards() {
         >
           <h2>Airbnb SuperHost!</h2>
           <p>
-            Caleb Trachte and his wife host guests at their full-service bed and
-            breakfast in Cabot, AR!
+            Caleb Trachte and his wife hosted over 1000 people at their full-service bed and
+            breakfast from 2019 to 2023. 
           </p>
         </a>
       </li>
@@ -63,7 +63,7 @@ export default function Cards() {
         </a>
       </li>
 
-      <li className="card">
+      {/* <li className="card">
         <a
           id="CAJOfficialLogo"
           className="card-image"
@@ -82,12 +82,10 @@ export default function Cards() {
         >
           <h2>Central Arkansas JavaScript</h2>
           <p>
-            Learn more about the latest JavaScript frameworks, utilities, and
-            tricks through our meetup group! Co-founded by Caleb Trachte, and
-            two other local senior developers.
+            From 2019 to 2022, Caleb and two other local senior developers founded Central Arkansas Javascript.
           </p>
         </a>
-      </li>
+      </li> */}
 
       <li className="card">
         <a
@@ -136,3 +134,4 @@ export default function Cards() {
     </ul>
   )
 }
+export default Cards

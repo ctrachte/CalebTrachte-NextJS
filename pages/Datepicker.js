@@ -22,16 +22,6 @@ const Datepicker = () => {
   const donateRef = useRef(null);
   const browserSupportRef = useRef(null);
   const valueRef = useRef(null);
-
-  const DatepickerScroll = () => datepickerRef.current.scrollIntoView();
-  const AboutScroll = () => aboutRef.current.scrollIntoView();
-  const GettingStartedScroll = () => gettingStartedRef.current.scrollIntoView();
-  const DependenciesScroll = () => dependenciesRef.current.scrollIntoView();
-  const ContributingScroll = () => contributingRef.current.scrollIntoView();
-  const DonateScroll = () => donateRef.current.scrollIntoView();
-  const BrowserSupportScroll = () => browserSupportRef.current.scrollIntoView();
-  const valueScroll = () => valueRef.current.scrollIntoView();
-
   // run this function from an event handler or an effect to execute scroll
   return (
     <div className="container">
@@ -70,16 +60,6 @@ const Datepicker = () => {
           <Donate />
         </div>
       </div>
-      <SideMenu
-        DatepickerScroll={DatepickerScroll}
-        AboutScroll={AboutScroll}
-        GettingStartedScroll={GettingStartedScroll}
-        DependenciesScroll={DependenciesScroll}
-        ContributingScroll={ContributingScroll}
-        DonateScroll={DonateScroll}
-        BrowserSupportScroll={BrowserSupportScroll}
-        valueScroll={valueScroll}
-      />
       <div id="sandbox-container"className="parent-datepicker-container" ref={datepickerRef}>
         <MomentDatepicker style={styles} />
       </div>

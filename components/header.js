@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Header() {
+const Header = () => {
   return (
     <header id="header">
       <a id="logo" href="/">
@@ -18,3 +18,4 @@ export default function Header() {
     </header>
   )
 }
+export default Header;
