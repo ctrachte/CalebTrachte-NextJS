@@ -89,19 +89,19 @@ const Cards = () => {
 
       <li className="card">
         <a
-          id="sunfireImage"
+          id="sunflareImage"
           className="card-image"
-          href="https://www.facebook.com/SunfireSauce"
+          href="/Sunflare"
           target="_blank"
         >
-          <img src="/Sunfire-logo.jpg" alt="Sunfire Hot Sauce Logo" />
+          <img src="/Sunflare-logo.jpg" alt="Sunflare Hot Sauce Logo" />
         </a>
         <a
           className="card-description"
-          href="https://www.facebook.com/SunfireSauce"
+          href="/Sunflare"
           target="_blank"
         >
-          <h2>Sunfire Hot Sauce</h2>
+          <h2>Sunflare Hot Sauce</h2>
           <p>
             Handcrafted, small-batch hot sauce made by Caleb and Amy Trachte in
             Cabot, Arkansas from fresh garden-grown ingredients. We will be
